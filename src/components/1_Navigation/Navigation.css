@@ -1,0 +1,62 @@
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Nav icons                   */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.nav-user-image{
+  border: solid 0.05em black;
+  border-radius: 0.4em;
+  box-shadow: 0 0 8px white;
+
+  min-height: 2.2em;
+  max-height: 2.2em;
+  min-width: 2.2em;
+  max-width: 2.2em;
+
+  text-align: center;
+  line-height: 2.2em;
+
+  cursor: pointer;  
+}
+
+.navicon{
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 2em;
+  box-shadow: 0 0 10px #EC8642;
+  cursor: pointer;
+}
+
+.navicon:hover {
+  border-radius: 2em;
+  box-shadow: 0 0 10px white;
+}
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Nav Bar Layout                   */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.nav-bar{
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #0e151a;
+  color: white;
+}
+
+.nav-bar > * {
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+}
+
+#left-nav{ justify-content: flex-start; }
+#mid-nav{ justify-content: center; }
+#right-nav{ justify-content: flex-end; }

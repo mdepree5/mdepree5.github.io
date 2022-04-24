@@ -1,28 +1,21 @@
+import { useState } from 'react';
 import { Route, Routes, Link, Navigate } from "react-router-dom";
 
+import Navigation from './components/1_Navigation'
 import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
-  
+  const [mode, switchMode] = useState('dark')
+
   return (
-    <div className="App">
+    <div className={`${mode} App`}>
+
+      <Navigation mode={mode} switchMode={switchMode} />
       
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>PERSONAL</h1>
-        
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React... or, don't...
-        </a>
+        <h2>Mitch DePree</h2>
 
         <ExternalLink link='https://github.com/mdepree5' image='https://capstone-slack-clone.s3.amazonaws.com/github.png' />
         <ExternalLink link='https://www.linkedin.com/in/mitch-depree-4a5686155/' image='https://capstone-slack-clone.s3.amazonaws.com/linkedin.png' />
