@@ -12,10 +12,17 @@ code {
   monospace;
 }
 
+a{
+  color: inherit;
+}
 
 .dark{
   background-color: #282c34;
-  color: white;
+  color: rgb(166, 166, 166);
+
+  & a{
+    color: red;
+  }
 }
 
 

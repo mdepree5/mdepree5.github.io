@@ -7,7 +7,7 @@ const Navigation = ({mode, switchMode}) => {
   const history = useNavigate();
 
   return (
-    <div className='nav-bar'>
+    <nav className='nav-bar'>
       <div id='left-nav'>
     {/* <img className='navicon' onClick={() => history.push('/')}
       src='https://capstone-slack-clone.s3.amazonaws.com/favicon.ico' alt='custom'
@@ -24,7 +24,7 @@ const Navigation = ({mode, switchMode}) => {
       <div id='right-nav'>
         Right
       </div>
-    </div>
+    </nav>
   )
 }
 
