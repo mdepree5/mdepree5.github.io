@@ -10,7 +10,6 @@ const Navigation = ({mode, switchMode}) => {
 
   const [dropdown, toggleDropdown] = useState(false)
 
-  
 
   return (
     <nav className={`${mode}-nav nav-bar`}>
