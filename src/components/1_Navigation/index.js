@@ -1,10 +1,16 @@
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { Divide as Hamburger } from 'hamburger-react'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 import './Navigation.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 const Navigation = ({mode, switchMode}) => {
   const navigate = useNavigate();
+
+  const [dropdown, toggleDropdown] = useState(false)
+
+  
 
   return (
     <nav className={`${mode}-nav nav-bar`}>
@@ -22,7 +28,10 @@ const Navigation = ({mode, switchMode}) => {
       </div>
     
       <div id='right-nav'>
-        Right
+        {dropdown && <div>
+          show dropdown
+        </div>}
+        <Hamburger toggled={dropdown} toggle={toggleDropdown} />
       </div>
     </nav>
   )

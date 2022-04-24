@@ -12,10 +12,9 @@ const Sections = () => {
   return (
     <div className='sections'>
       <div className='row-list site-nav' >
-        <Link to="/" >Home</Link>
-        <Link to="/about" >About</Link>
-        <Link to="/resume" >Resume</Link>
         <Link to="/projects" >Projects</Link>
+        <Link to="/resume" >Resume</Link>
+        <Link to="/about" >About</Link>
       </div>
 
       <div className='site-page'>

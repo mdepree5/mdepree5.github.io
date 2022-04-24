@@ -6,6 +6,10 @@ const Resume = () => {
   
   return (<>
     <h1>Resume</h1>
+    
+    <div className='row-list'>
+
+    </div>
     <p>
       hello lorem ipsum
     </p>

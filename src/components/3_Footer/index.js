@@ -12,7 +12,7 @@ const Footer = ({mode}) => {
       <div className='row-list'>
         <ExternalLink link='https://github.com/mdepree5' image='https://capstone-slack-clone.s3.amazonaws.com/github.png' />
         <ExternalLink link='https://www.linkedin.com/in/mitch-depree-4a5686155/' image='https://capstone-slack-clone.s3.amazonaws.com/linkedin.png' />
-        <a href="mailto:mdepree315@gmail.com" class="icon style2 fa-envelope"><span class="label">Email Mitch</span></a>
+        <a href="mailto:mdepree315@gmail.com" >Email Mitch</a>
       </div>
 
     </footer>
