@@ -1,5 +1,17 @@
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Index                   */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.site-nav{
+  border: 0.05em solid red;
+  justify-content: space-between;
+  justify-content: space-evenly;
+  font-weight: bold;
+}
 
-
+.site-page{
+  border: 0.05em solid lime;
+  min-height: 5em;
+}
 
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */

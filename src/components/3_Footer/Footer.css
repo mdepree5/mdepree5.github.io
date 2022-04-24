@@ -1,0 +1,26 @@
+.dark-footer{
+  background-color: #0e151a;
+  color: skyblue;
+  border-top: 0.05em solid skyblue;
+}
+
+.light-footer{
+  border-top: 0.05em solid #0e151a;
+  background-color: skyblue;
+  color: #0e151a;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  
+  
+  justify-content: space-evenly;
+  
+  height: 80px;
+  width: 100%;
+  text-decoration: none;
+  z-index: 97;
+}

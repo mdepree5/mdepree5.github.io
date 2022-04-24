@@ -4,12 +4,10 @@
 }
 
 .App > div {
-  width: 80%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 
 .App-logo {
@@ -45,15 +43,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* todo             Site Nav                   */
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-.site-nav{
-  border: 0.05em solid red;
-  justify-content: space-between;
-  justify-content: space-evenly;
-  font-weight: bold;
 }
