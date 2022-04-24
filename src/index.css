@@ -5,28 +5,80 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
+
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Elements                   */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
 
+div{ margin: 0; }
+
 a{
   color: inherit;
+  text-decoration: none;
 }
 
+button{
+
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+
+  /* border: solid rgb(0, 162, 255) 0.15em; */
+  border: 0.08em solid rgb(0, 162, 255);
+
+  border-radius: 1em;
+  color: inherit;
+  font: inherit;
+  padding: 0.2em;
+  cursor: pointer;
+  min-height: 1.8em;
+  max-height: 1.8em;
+  text-align: center;
+
+  /* width: 50%; */
+  /* max-width: 10px; */
+}
+
+
+::-webkit-scrollbar{
+  width: 0.6em;
+  z-index: 1;
+  background: none;
+}
+
+::-webkit-scrollbar-thumb{
+  background: gray;
+  z-index: 2;
+  border-radius: 10em;
+}
+
+::-webkit-scrollbar-thumb:hover{ background: #EC8642 ; }
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Common Classes                   */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
 .dark{
   background-color: #282c34;
   color: rgb(166, 166, 166);
-
-  & a{
-    color: red;
-  }
 }
-
-
-div{ margin: 0; }
+.light{
+  background-color: white;
+  color: red;
+}
 
 .row-list{ display: flex; flex-direction: row; }
 .col-list{ display: flex; flex-direction: column; }

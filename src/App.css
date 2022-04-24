@@ -55,4 +55,5 @@
   border: 0.05em solid red;
   justify-content: space-between;
   justify-content: space-evenly;
+  font-weight: bold;
 }

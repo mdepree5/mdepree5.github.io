@@ -4,15 +4,15 @@ import './Navigation.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 const Navigation = ({mode, switchMode}) => {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   return (
-    <nav className='nav-bar'>
+    <nav className={`${mode}-nav nav-bar`}>
       <div id='left-nav'>
     {/* <img className='navicon' onClick={() => history.push('/')}
       src='https://capstone-slack-clone.s3.amazonaws.com/favicon.ico' alt='custom'
     /> */}
-        <h2 style={{cursor:'pointer'}} onClick={() => history.push('/')} >Mitch DePree</h2>
+        <h2 style={{cursor:'pointer'}} onClick={() => navigate('/')} >Mitch DePree</h2>
       </div>
     
       <div id='mid-nav'>
