@@ -5,7 +5,7 @@ import './Sections.css'
 const Resume = () => {
   
   return (<>
-    <h2>Resume</h2>
+    <h1>Resume</h1>
     <p>
       hello lorem ipsum
     </p>

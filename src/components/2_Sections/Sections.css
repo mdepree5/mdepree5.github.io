@@ -1,1 +1,27 @@
 
+
+
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Projects                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.project-card{
+  border: 0.05em solid red;
+  /* justify-content: space-between;
+  justify-content: space-evenly;
+  font-weight: bold; */
+}
+.project-card:hover{
+  background: rgb(54, 55, 62);
+  /* justify-content: space-between;
+  justify-content: space-evenly;
+  font-weight: bold; */
+}
+
+.external-link{
+  cursor: pointer;
+}
+
+.external-link:hover{
+  border-bottom: 0.05em solid white;
+}
