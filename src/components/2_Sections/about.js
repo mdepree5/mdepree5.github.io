@@ -7,7 +7,8 @@ const About = () => {
   return (<>
     <h1>About Mitch</h1>
     <p>
-      hello lorem ipsum
+      Full Stack developer
+      Lifelong Learner
     </p>
   </>)
 }

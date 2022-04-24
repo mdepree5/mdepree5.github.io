@@ -29,7 +29,7 @@ const projects = [
   {
     name: 'Rabbit Hole',
     contributors: 'Mitch DePree, Skye Brown, Wan-Yi Lee, Hamlet Villa',
-    description: 'Here at TVHey, we believe in the power of communication, and we believe in giving you the tools to communicate. Check out our latest product, a beautifully designed, lightning-fast messaging app (inspired by Slack). We think you\'ll love it.',
+    description: 'Every developer has ventured down a "rabbit hole" at some point in their career. Rabbit Hole is here to help you out.',
     live: 'https://rabbit-hole-cl.herokuapp.com/',
     repo: 'https://github.com/mdepree5/express-project',
     image: '',
