@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = ({mode}) => {
   return (
-    <div className={`${mode}-footer footer`}>
+    <footer className={`${mode}-footer footer`}>
       <h1>Footer</h1>
 
       <h2>Mitch DePree</h2>
@@ -15,7 +15,7 @@ const Footer = ({mode}) => {
         <a href="mailto:mdepree315@gmail.com" class="icon style2 fa-envelope"><span class="label">Email Mitch</span></a>
       </div>
 
-    </div>
+    </footer>
   )
 }
 

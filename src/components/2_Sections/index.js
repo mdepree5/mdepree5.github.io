@@ -10,7 +10,7 @@ import './Sections.css'
 const Sections = () => {
 
   return (
-    <>
+    <div className='sections'>
       <div className='row-list site-nav' >
         <Link to="/" >Home</Link>
         <Link to="/about" >About</Link>
@@ -26,7 +26,7 @@ const Sections = () => {
           <Route path="/projects" element={<Projects/>} />
         </Routes>
       </div>
-    </>
+    </div>
 
 
   )

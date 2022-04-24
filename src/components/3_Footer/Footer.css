@@ -23,4 +23,6 @@
   width: 100%;
   text-decoration: none;
   z-index: 97;
+  
+  flex-shrink: 0;
 }
