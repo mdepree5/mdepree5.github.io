@@ -1,12 +1,12 @@
-import './sec_bio.css'
+import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 
 
-const Bio = () => {
+const Skills = () => {
   return (
-    <div>BIO</div>
+    <div>SKILLS</div>
   )
 }
 
-export default Bio;
+export default Skills;

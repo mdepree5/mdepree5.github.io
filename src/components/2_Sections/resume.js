@@ -1,12 +1,15 @@
-import './sec_skills.css'
+import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 
-
-const Skills = () => {
-  return (
-    <div>SKILLS</div>
-  )
+const Resume = () => {
+  
+  return (<>
+    <h2>Resume</h2>
+    <p>
+      hello lorem ipsum
+    </p>
+  </>)
 }
 
-export default Skills;
+export default Resume;
