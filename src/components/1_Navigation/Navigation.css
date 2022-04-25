@@ -33,10 +33,6 @@
   font-size: 1.2em;
   /* font-weight: bold; */
 }
-#mid-nav > *:hover{
-  /* font-weight: bold; */
-  border-bottom: 0.07em solid black;
-}
 #right-nav{ justify-content: flex-end; }
 
 
@@ -55,8 +51,15 @@
   border-bottom: 0.05em solid gray;
 }
 
-.dark-selected-site{ border-bottom: 0.07em solid lime; }
+.dark-selected-site{ border-bottom: 0.07em solid wheat; }
 .light-selected-site{ border-bottom: 0.07em solid black; }
+
+#dark-navlink{ color: skyblue; }
+#light-navlink{ color: #0e151a; }
+
+#dark-navlink:hover{ border-bottom: 0.07em solid wheat; }
+#light-navlink:hover{ border-bottom: 0.07em solid black; }
+
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Dropdown                   */
