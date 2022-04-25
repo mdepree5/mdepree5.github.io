@@ -7,7 +7,7 @@ const Projects = () => {
   return (<>
     <h1>Projects</h1>
     
-    <div className='projects-container'>
+    <div className='col-list'>
       {projects.map(project => <ProjectCard key={project.name} project={project}/>)}
     </div>
   </>)
@@ -20,7 +20,6 @@ const ProjectCard = ({project}) => {
       <img className='project-image' src={project.image} alt="project" />
 
       <div className='col-list'>
-
         <div className='project-links'>
           <h2>{project.name}</h2>
           <ExternalLink link={project.live} text='See Live'/>

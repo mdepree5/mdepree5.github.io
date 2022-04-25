@@ -1,13 +1,12 @@
 .dark-footer{
-  /* background-color: #0e151a; */
   color: skyblue;
-  border-top: 0.05em solid skyblue;
+  border-top: 0.1em solid skyblue;
+  border-top: 0.1em solid white;
 }
 
 .light-footer{
-  /* background-color: skyblue; */
   color: #0e151a;
-  border-top: 0.05em solid #0e151a;
+  border-top: 0.1em solid #0e151a;
 }
 
 .footer{

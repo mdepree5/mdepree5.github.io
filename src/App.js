@@ -19,7 +19,7 @@ const App = () => {
     <div className={`${mode} App col-list`}>
       <Navigation mode={mode} switchMode={switchMode} setSite={setSite}/>
 
-      <Sections site={site}/>
+      <Sections mode={mode} site={site}/>
 
       <Footer mode={mode}/>
     </div>

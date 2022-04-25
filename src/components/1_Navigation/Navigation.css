@@ -35,24 +35,21 @@
 }
 #right-nav{ justify-content: flex-end; }
 
-
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Nav colors                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .dark-nav{
   background-color: #0e151a;
   color: skyblue;
-  border-bottom: 0.05em solid white;
+  border-bottom: 0.1em solid skyblue;
+  border-bottom: 0.1em solid white;
 }
 
 .light-nav{
   background-color: skyblue;
   color: #0e151a;
-  border-bottom: 0.05em solid gray;
+  border-bottom: 0.1em solid #0e151a;
 }
-
-.dark-selected-site{ border-bottom: 0.07em solid wheat; }
-.light-selected-site{ border-bottom: 0.07em solid black; }
 
 .dark-navlink{ color: skyblue; }
 .light-navlink{ color: #0e151a; }

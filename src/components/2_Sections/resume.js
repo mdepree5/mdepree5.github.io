@@ -3,7 +3,7 @@ import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 
-const Resume = () => {
+const Resume = ({mode}) => {
   
   return (<>
     <h1>Resume</h1>
@@ -11,18 +11,18 @@ const Resume = () => {
     <div className='col-list'>
 
       <strong>Experiences</strong>
-      <div className='resume-container'>
+      <div className={`${mode}-resume-container resume-container`}>
         {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
       </div>
 
       <strong>Education</strong>
-      <div className='resume-container'>
+      <div className={`${mode}-resume-container resume-container`}>
         {educations.map(education => <EducationCard key={education.name} education={education}/>)}
       </div>
 
       <strong>Skills</strong>
-      <div className='resume-container'>
-        {skills.map(skill => <SkillCard key={skill.image} skill={skill}/>)}
+      <div className={`${mode}-resume-container resume-container`}>
+        {skills.map(skill => <SkillCard key={skill.image} mode={mode} skill={skill}/>)}
       </div>
 
     </div>
@@ -30,10 +30,10 @@ const Resume = () => {
 }
 
 
-const SkillCard = ({skill}) => {
+const SkillCard = ({mode, skill}) => {
 
   return (
-    <div className='skill-card'>
+    <div className={`${mode}-skill-card skill-card`}>
       <img src={skill.image} alt="icon" />
     </div>
   )
@@ -54,6 +54,9 @@ const ExperienceCard = ({experience}) => {
         <li key={bullet}>{bullet}</li>
       ))}</ul>
     </div>
+
+
+
   )
 }
 

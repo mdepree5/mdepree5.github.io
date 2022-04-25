@@ -7,15 +7,15 @@ import Projects from './projects'
 import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
-const Sections = ({site}) => {
+const Sections = ({mode, site}) => {
 
   return (
-    <div className='site-page'>
+    <div className={`${mode}-site-page site-page`}>
       {(() => {
         switch (site) {
           case '': return <Home/>
           case 'about': return <About/>
-          case 'resume': return <Resume/>
+          case 'resume': return <Resume mode={mode}/>
           case 'projects': return <Projects/>
           default: return <Home/>
         }
