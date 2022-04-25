@@ -36,9 +36,9 @@ const Navigation = ({mode, switchMode}) => {
         {dropdown && 
           <Modal noBackground={true} providedContent={false} onClose={()=> toggleDropdown(false)}>
             {<div className='dropdown-content'>
-              <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/projects" >Projects</NavLink>
-              <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/resume" >Resume</NavLink>
-              <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/about" >About</NavLink>
+              <NavLink onClick={()=> toggleDropdown(false)} to="/projects" >Projects</NavLink>
+              <NavLink onClick={()=> toggleDropdown(false)} to="/resume" >Resume</NavLink>
+              <NavLink onClick={()=> toggleDropdown(false)} to="/about" >About</NavLink>
             </div>}
           </Modal>
         }

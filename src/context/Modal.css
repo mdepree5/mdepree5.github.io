@@ -12,9 +12,6 @@
 
   z-index: 11;
   padding: 0;
-  /* width: 50%; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
 }
 
 .modal-background {
@@ -27,23 +24,3 @@
 }
 
 #no-background { background: none; }
-
-.dropdown-content{
-  display: flex;
-  flex-direction: column;
-
-  position: absolute;
-  z-index: 3;
-
-  top: 4em;
-  /* left: calc(80vw - 28em); */
-  
-
-  width: 10em;
-
-  padding: 1em;
-  
-  background-color: green;
-  box-shadow: 0 0 8px gray;
-  border-radius: 10px;
-}

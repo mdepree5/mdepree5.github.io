@@ -64,9 +64,22 @@
   
   position: relative;
 
-  right: 5em;
-  top: 2em;
-  z-index: 5;
+  /* right: 5em; */
+  top: 4em;
+  z-index: 12;
+  width: 10em;
+
+  box-shadow: 0 0 8px gray;
+  border-radius: 0.8em;
+
+  overflow: hidden;
+}
+
+.dropdown-content > *{
+  padding: 1em;
+}
+.dropdown-content > *:hover{
+  background-color: skyblue;
 }
 
 
