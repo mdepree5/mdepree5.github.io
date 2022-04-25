@@ -35,6 +35,7 @@ const ProjectCard = ({project}) => {
   )
 }
 
+
 const ExternalLink = ({link, text}) => <strong className='external-link' onClick={()=>window.open(link)}>{text}</strong>
 
 export default Projects;

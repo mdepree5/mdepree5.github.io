@@ -23,9 +23,6 @@
 }
 .project-card:hover{
   background: rgb(54, 55, 62);
-  /* justify-content: space-between;
-  justify-content: space-evenly;
-  font-weight: bold; */
 }
 
 .external-link{
@@ -53,7 +50,7 @@
 }
 
 .project-description{
-
+  border: 0.05em solid gold;
 }
 
 
@@ -80,6 +77,9 @@
   border: 0.05em solid white;
   height: 6em;
   width: 6em;
+}
+.skill-card:hover{
+  background: rgb(211, 229, 255);
 }
 
 .skill-card > img{
