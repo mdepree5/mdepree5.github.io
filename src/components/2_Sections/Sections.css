@@ -21,9 +21,9 @@
   font-weight: bold; */
   padding: 1em;
 }
-.project-card:hover{
+/* .project-card:hover{
   background: rgb(54, 55, 62);
-}
+} */
 
 .external-link{
   cursor: pointer;
@@ -62,9 +62,9 @@
 .experience-card > *{
   width: 50%;
 }
-.experience-card:hover{
+/* .experience-card:hover{
   background: rgb(54, 55, 62);
-}
+} */
 
 .experience-image{
   border: 0.05em solid gold;
@@ -80,9 +80,9 @@
 .education-card > *{
   width: 50%;
 }
-.education-card:hover{
+/* .education-card:hover{
   background: rgb(54, 55, 62);
-}
+} */
 
 .education-image{
   border: 0.05em solid gold;

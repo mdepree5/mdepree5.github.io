@@ -3,6 +3,7 @@ import { useNavigate, Route, Routes, NavLink, Navigate } from "react-router-dom"
 import { Divide as Hamburger } from 'hamburger-react'
 import { WiSolarEclipse } from "react-icons/wi";
 // ???? ——————————————————————————————————————————————————————————————————————————————————
+import { Modal } from '../../context/Modal';
 import './Navigation.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
@@ -29,10 +30,19 @@ const Navigation = ({mode, switchMode}) => {
     
       <div id='right-nav'>
         <WiSolarEclipse style={{height: '2em', width:'2em', cursor: 'pointer'}} onClick={() => switchMode(mode === 'light' ? 'dark' : 'light')}/>
+        
 
-        {dropdown && <div>
-          show dropdown
-        </div>}
+
+        {dropdown && 
+          <Modal noBackground={true} providedContent={false} onClose={()=> toggleDropdown(false)}>
+            {<div className='dropdown-content'>
+              <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/projects" >Projects</NavLink>
+              <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/resume" >Resume</NavLink>
+              <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/about" >About</NavLink>
+            </div>}
+          </Modal>
+        }
+
         <Hamburger toggled={dropdown} toggle={toggleDropdown} />
       </div>
     </nav>

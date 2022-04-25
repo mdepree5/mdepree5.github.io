@@ -1,5 +1,7 @@
 .modal-container {
   position: fixed;
+  /* position: absolute; */
+  /* position: sticky; */
   top: 0;
   right: 0;
   left: 0;
@@ -20,19 +22,26 @@
   left: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.55);
-  /* background-color: none; */
 }
 
-.modal-content {
-  position: absolute;
-  /* padding: 20px; */
-  padding: 2em;
-  
-  box-shadow: 0 1px 10px rgb(167, 167, 167);
-  
-  background-color:#232529;
+#no-background { background: none; }
 
+.dropdown-content{
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  z-index: 3;
+
+  top: 4em;
+  /* left: calc(80vw - 28em); */
+  
+
+  width: 10em;
+
+  padding: 1em;
+  
+  background-color: green;
+  box-shadow: 0 0 8px gray;
   border-radius: 10px;
-  min-height: 200px;
-  min-width: 200px;
 }

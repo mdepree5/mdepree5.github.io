@@ -51,3 +51,23 @@
 
 .dark-selected-site{ border-bottom: 0.07em solid lime; }
 .light-selected-site{ border-bottom: 0.07em solid black; }
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Dropdown                   */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.dropdown-content{
+  display: flex;
+  flex-direction: column;
+  
+  background-color: wheat;
+  border: 0.05em solid red;
+  
+  position: relative;
+
+  right: 5em;
+  top: 2em;
+  z-index: 5;
+}
+
+
+

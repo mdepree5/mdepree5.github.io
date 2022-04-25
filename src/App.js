@@ -7,7 +7,12 @@ import './App.css';
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 const App = () => {
-  const [mode, switchMode] = useState('dark')
+  // const [mode, switchMode] = useState('dark')
+  const [mode, switchMode] = useState('light')
+
+  // todo ——————————————————————————————————————————————————————————————————————————————————
+  // todo                               Use local storage?
+  // todo ——————————————————————————————————————————————————————————————————————————————————
 
   return (
     <div className={`${mode} App col-list`}>
