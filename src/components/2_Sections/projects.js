@@ -7,7 +7,6 @@ const Projects = () => {
   return (<>
     <h1>Projects</h1>
     
-
     <div className='projects-container'>
       {projects.map(project => <ProjectCard key={project.name} project={project}/>)}
     </div>

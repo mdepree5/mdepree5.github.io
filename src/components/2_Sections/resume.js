@@ -31,7 +31,7 @@ const Resume = () => {
 
 
 const SkillCard = ({skill}) => {
-  
+
   return (
     <div className='skill-card'>
       <img src={skill.image} alt="icon" />
@@ -42,14 +42,17 @@ const SkillCard = ({skill}) => {
 const ExperienceCard = ({experience}) => {
   
   return (
-    <div className='experience-card'>
-      <div style={{fontWeight: 'bold'}} >{experience.role}</div>
-      <div style={{fontStyle: 'italic'}} >{experience.name}</div>
-      <div>{experience.timeframe}</div>
+    <div className='experience-card row-list'>
+      <div className='col-list'>
+        <img className='experience-image' src={experience.image} alt="experience" />
+      
+        <h3 >{experience.role}</h3>
+        <div style={{fontStyle: 'italic'}} >{experience.name}</div><div>{experience.timeframe}</div>
+      </div>
+
       <ul>{experience.bullets.map(bullet => (
         <li key={bullet}>{bullet}</li>
       ))}</ul>
-      <img src={experience.image} alt="experience" />
     </div>
   )
 }

@@ -53,6 +53,27 @@
   border: 0.05em solid gold;
 }
 
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Experiences                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.experience-card{
+  border: 0.05em solid white;
+  /* height: 6em;
+  width: 6em; */
+}
+
+.experience-card > *{
+  width: 50%;
+}
+.experience-card:hover{
+  background: rgb(54, 55, 62);
+}
+
+.experience-image{
+  border: 0.05em solid gold;
+  min-width: 16em;
+  min-height: 10em;
+}
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Skills                  */
