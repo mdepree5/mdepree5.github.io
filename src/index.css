@@ -82,6 +82,7 @@ button{
 /* todo             Common Classes                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .dark{
+  /* background-color: #19252e; */
   background-color: #282c34;
   color: rgb(166, 166, 166);
 }

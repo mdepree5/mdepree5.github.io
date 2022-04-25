@@ -33,9 +33,9 @@ const Navigation = ({mode, switchMode}) => {
 
         {dropdown && <div className='dropdown-background' onClick={()=> toggleDropdown(false)}>
           <div className='dropdown-content'>
-            <NavLink onClick={()=> toggleDropdown(false)} to="/projects" >Projects</NavLink>
-            <NavLink onClick={()=> toggleDropdown(false)} to="/resume" >Resume</NavLink>
-            <NavLink onClick={()=> toggleDropdown(false)} to="/about" >About</NavLink>
+            <NavLink className={`${mode}-dropdownlink`} onClick={()=> toggleDropdown(false)} to="/projects" >Projects</NavLink>
+            <NavLink className={`${mode}-dropdownlink`} onClick={()=> toggleDropdown(false)} to="/resume" >Resume</NavLink>
+            <NavLink className={`${mode}-dropdownlink`} onClick={()=> toggleDropdown(false)} to="/about" >About</NavLink>
           </div>
         </div>}
       </div>
