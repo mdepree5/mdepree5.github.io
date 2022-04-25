@@ -11,17 +11,17 @@ const Resume = () => {
     <div className='col-list'>
 
       <strong>Experiences</strong>
-      <div className='skills-container'>
+      <div className='resume-container'>
         {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
       </div>
 
       <strong>Education</strong>
-      <div className='skills-container'>
+      <div className='resume-container'>
         {educations.map(education => <EducationCard key={education.name} education={education}/>)}
       </div>
 
       <strong>Skills</strong>
-      <div className='skills-container'>
+      <div className='resume-container'>
         {skills.map(skill => <SkillCard key={skill.image} skill={skill}/>)}
       </div>
 

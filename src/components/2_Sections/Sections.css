@@ -56,11 +56,8 @@
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Experiences                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-.experience-card{
-  border: 0.05em solid white;
-  /* height: 6em;
-  width: 6em; */
-}
+/* .experience-card{
+} */
 
 .experience-card > *{
   width: 50%;
@@ -74,11 +71,29 @@
   min-width: 16em;
   min-height: 10em;
 }
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Education                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* .education-card{
+} */
+
+.education-card > *{
+  width: 50%;
+}
+.education-card:hover{
+  background: rgb(54, 55, 62);
+}
+
+.education-image{
+  border: 0.05em solid gold;
+  min-width: 16em;
+  min-height: 10em;
+}
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Skills                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-.skills-container{
+.resume-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -90,12 +105,19 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  
+  overflow: hidden;
+  /* padding: 2em; */
+}
 
+.resume-container > * {
   padding: 2em;
+  width: 100%;
 }
 
 .skill-card{
   border: 0.05em solid white;
+  padding: 0;
   height: 6em;
   width: 6em;
 }
