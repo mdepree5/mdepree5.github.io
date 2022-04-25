@@ -1,13 +1,13 @@
 .dark-footer{
-  background-color: #0e151a;
+  /* background-color: #0e151a; */
   color: skyblue;
   border-top: 0.05em solid skyblue;
 }
 
 .light-footer{
-  border-top: 0.05em solid #0e151a;
-  background-color: skyblue;
+  /* background-color: skyblue; */
   color: #0e151a;
+  border-top: 0.05em solid #0e151a;
 }
 
 .footer{
@@ -26,4 +26,13 @@
   z-index: 97;
   
   flex-shrink: 0;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer-links > *{
+  margin-left: 1em;
 }

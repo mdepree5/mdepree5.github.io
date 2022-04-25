@@ -71,12 +71,12 @@ button{
 }
 
 ::-webkit-scrollbar-thumb{
-  background: orange;
+  background: skyblue;
   z-index: 2;
-  border-radius: 10em;
+  /* border-radius: 5em; */
 }
 
-::-webkit-scrollbar-thumb:hover{ background: #EC8642 ; }
+::-webkit-scrollbar-thumb:hover{ background: #282c34; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Common Classes                   */
