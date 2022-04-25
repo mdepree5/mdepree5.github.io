@@ -54,11 +54,11 @@
 .dark-selected-site{ border-bottom: 0.07em solid wheat; }
 .light-selected-site{ border-bottom: 0.07em solid black; }
 
-#dark-navlink{ color: skyblue; }
-#light-navlink{ color: #0e151a; }
+.dark-navlink{ color: skyblue; }
+.light-navlink{ color: #0e151a; }
 
-#dark-navlink:hover{ border-bottom: 0.07em solid wheat; }
-#light-navlink:hover{ border-bottom: 0.07em solid black; }
+.dark-navlink:hover{ border-bottom: 0.07em solid wheat; }
+.light-navlink:hover{ border-bottom: 0.07em solid black; }
 
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */

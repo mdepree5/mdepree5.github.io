@@ -1,27 +1,33 @@
 import { useState } from 'react'
-import { useNavigate, NavLink } from "react-router-dom";
 import { Divide as Hamburger } from 'hamburger-react'
 import { WiSolarEclipse } from "react-icons/wi";
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 import './Navigation.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
-const Navigation = ({mode, switchMode}) => {
-  const navigate = useNavigate();
+const Navigation = ({mode, switchMode, setSite}) => {
 
   const [dropdown, toggleDropdown] = useState(false)
 
+  const NavLink = ({type, section}) => {
+    return (
+      <div style={{cursor:'pointer'}} className={`${mode}-${type}`} onClick={() => {
+        setSite(section.toLowerCase())
+        toggleDropdown(false)
+      }}> {section} </div>
+    )
+  }
 
   return (
     <nav className={`${mode}-nav nav-bar`}>
       <div id='left-nav'>
-        <h2 style={{cursor:'pointer'}} onClick={() => navigate('/')} >Mitch DePree</h2>
+        <h2 style={{cursor:'pointer'}} onClick={() => setSite('')} >Mitch DePree</h2>
       </div>
     
       <div id='mid-nav'>
-        <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/projects" >Projects</NavLink>
-        <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/resume" >Resume</NavLink>
-        <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/about" >About</NavLink>
+        <NavLink type='navlink' section='Projects'/>
+        <NavLink type='navlink' section='Resume'/>
+        <NavLink type='navlink' section='About'/>
       </div>
     
       <div id='right-nav'>
@@ -30,14 +36,19 @@ const Navigation = ({mode, switchMode}) => {
 
         {dropdown && <div className='dropdown-background' onClick={()=> toggleDropdown(false)}>
           <div className='dropdown-content'>
-            <NavLink className={`${mode}-dropdownlink`} onClick={()=> toggleDropdown(false)} to="/projects" >Projects</NavLink>
-            <NavLink className={`${mode}-dropdownlink`} onClick={()=> toggleDropdown(false)} to="/resume" >Resume</NavLink>
-            <NavLink className={`${mode}-dropdownlink`} onClick={()=> toggleDropdown(false)} to="/about" >About</NavLink>
+            <NavLink type='dropdownlink' section='Projects'/>
+            <NavLink type='dropdownlink' section='Resume'/>
+            <NavLink type='dropdownlink' section='About'/>
           </div>
         </div>}
       </div>
     </nav>
   )
 }
+
+
+
+
+
 
 export default Navigation;

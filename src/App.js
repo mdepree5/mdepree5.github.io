@@ -7,6 +7,7 @@ import './App.css';
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 const App = () => {
+  const [site, setSite] = useState('')
   // const [mode, switchMode] = useState('dark')
   const [mode, switchMode] = useState('light')
 
@@ -16,9 +17,9 @@ const App = () => {
 
   return (
     <div className={`${mode} App col-list`}>
-      <Navigation mode={mode} switchMode={switchMode} />
+      <Navigation mode={mode} switchMode={switchMode} setSite={setSite}/>
 
-      <Sections />
+      <Sections site={site}/>
 
       <Footer mode={mode}/>
     </div>

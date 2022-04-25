@@ -7,21 +7,20 @@ import Projects from './projects'
 import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
-const Sections = () => {
+const Sections = ({site}) => {
 
   return (
-    <div className='sections'>
-      <div className='site-page'>
-        <Routes >
-          <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
-          <Route path="/resume" element={<Resume/>} />
-          <Route path="/projects" element={<Projects/>} />
-        </Routes>
-      </div>
+    <div className='site-page'>
+      {(() => {
+        switch (site) {
+          case '': return <Home/>
+          case 'about': return <About/>
+          case 'resume': return <Resume/>
+          case 'projects': return <Projects/>
+          default: return <Home/>
+        }
+      })()}
     </div>
-
-
   )
 }
 
