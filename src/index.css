@@ -71,7 +71,7 @@ button{
 }
 
 ::-webkit-scrollbar-thumb{
-  background: gray;
+  background: orange;
   z-index: 2;
   border-radius: 10em;
 }
