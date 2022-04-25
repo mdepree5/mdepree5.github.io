@@ -10,7 +10,7 @@ export const projects = [
     bullets: [
       '',
     ],
-    image: '',
+    image: 'https://md5-self.s3.amazonaws.com/project-screenshots/4.+TVHey/tvh-home.png',
   },
   {
     name: 'Cheatsheets',
@@ -25,7 +25,7 @@ export const projects = [
       'Organized backend file structure and wrote all pre-refactored models, forms, and api routes',
       'Coordinated Agile workflow and ensured stretch goals were met during week-long sprint',
     ],
-    image: '',
+    image: 'https://md5-self.s3.amazonaws.com/project-screenshots/3.+Cheatsheets/c-home.png',
   },
   {
     name: 'Monopolynb',
@@ -40,7 +40,7 @@ export const projects = [
       'Ensured consistent and secure data entries into database using Express-Validators',
       'Fashioned a clean interface for site scrolling and a responsive, color-changing navigation bar',
     ],
-    image: '',
+    image: 'https://md5-self.s3.amazonaws.com/project-screenshots/2.+Monopolynb/mnb-home.png',
   },
   {
     name: 'Rabbit Hole',
@@ -52,7 +52,7 @@ export const projects = [
     bullets: [
       '',
     ],
-    image: '',
+    image: 'https://md5-self.s3.amazonaws.com/project-screenshots/1.+Rabbit+Hole/rh-home.png',
   },
 ]
 
