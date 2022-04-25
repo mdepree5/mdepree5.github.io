@@ -16,7 +16,7 @@ const Sections = ({mode, site}) => {
           case '': return <Home/>
           case 'about': return <About/>
           case 'resume': return <Resume mode={mode}/>
-          case 'projects': return <Projects/>
+          case 'projects': return <Projects mode={mode}/>
           default: return <Home/>
         }
       })()}

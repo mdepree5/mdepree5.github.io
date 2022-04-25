@@ -2,26 +2,26 @@ import {projects} from '../../data/projects'
 import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
-const Projects = () => {
+const Projects = ({mode}) => {
   
   return (<>
     <h1>Projects</h1>
     
     <div className='col-list'>
-      {projects.map(project => <ProjectCard key={project.name} project={project}/>)}
+      {projects.map(project => <ProjectCard key={project.name} mode={mode} project={project}/>)}
     </div>
   </>)
 }
 
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({mode, project}) => {
   return (
-    <div className='project-card row-list'>
-      <img className='project-image' src={project.image} alt="project" />
+    <div className={`${mode}-project-card project-card row-list`}>
+      <img style={{cursor:'pointer'}} onClick={()=>window.open(project.live)} className='project-image' src={project.image} alt="project" />
 
       <div className='col-list'>
         <div className='project-links'>
-          <h2>{project.name}</h2>
+          <h2 style={{cursor:'pointer'}} onClick={()=>window.open(project.live)} >{project.name}</h2>
           <ExternalLink link={project.live} text='See Live'/>
           <ExternalLink link={project.repo} text='See Github'/>
         </div>

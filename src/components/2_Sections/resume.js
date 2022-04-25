@@ -9,22 +9,20 @@ const Resume = ({mode}) => {
     <h1>Resume</h1>
 
     <div className='col-list'>
-
-      <strong>Experiences</strong>
+      <h2>Experiences</h2>
       <div className={`${mode}-resume-container resume-container`}>
         {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
       </div>
 
-      <strong>Education</strong>
+      {/* <h2>Education</h2>
       <div className={`${mode}-resume-container resume-container`}>
         {educations.map(education => <EducationCard key={education.name} education={education}/>)}
-      </div>
+      </div> */}
 
-      <strong>Skills</strong>
+      {/* <h2>Skills</h2>
       <div className={`${mode}-resume-container resume-container`}>
         {skills.map(skill => <SkillCard key={skill.image} mode={mode} skill={skill}/>)}
-      </div>
-
+      </div> */}
     </div>
   </>)
 }
@@ -43,16 +41,19 @@ const ExperienceCard = ({experience}) => {
   
   return (
     <div className='experience-card row-list'>
-      <div className='col-list'>
-        <img className='experience-image' src={experience.image} alt="experience" />
+      <img className='experience-image' src={experience.image} alt="experience" />
       
-        <h3 >{experience.role}</h3>
-        <div style={{fontStyle: 'italic'}} >{experience.name}</div><div>{experience.timeframe}</div>
+      <div className='col-list'>
+        <div className='experience-header' >
+          <h3 >{experience.role}</h3>
+          <div style={{fontStyle: 'italic'}} >{experience.name}</div><div>{experience.timeframe}</div>
+        </div>
+
+        <ul>{experience.bullets.map(bullet => (
+          <li key={bullet}>{bullet}</li>
+        ))}</ul>
       </div>
 
-      <ul>{experience.bullets.map(bullet => (
-        <li key={bullet}>{bullet}</li>
-      ))}</ul>
     </div>
 
 
