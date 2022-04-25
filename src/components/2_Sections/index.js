@@ -1,4 +1,4 @@
-import { Route, Routes, Link, Navigate } from "react-router-dom";
+import { Route, Routes, NavLink, Navigate } from "react-router-dom";
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 import Home from './home'
 import About from './about'
@@ -11,14 +11,8 @@ const Sections = () => {
 
   return (
     <div className='sections'>
-      <div className='row-list site-nav' >
-        <Link to="/projects" >Projects</Link>
-        <Link to="/resume" >Resume</Link>
-        <Link to="/about" >About</Link>
-      </div>
-
       <div className='site-page'>
-        <Routes>
+        <Routes >
           <Route path="/" element={<Home/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/resume" element={<Resume/>} />

@@ -1,35 +1,4 @@
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* todo             Nav icons                   */
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-.nav-user-image{
-  border: solid 0.05em black;
-  border-radius: 0.4em;
-  box-shadow: 0 0 8px white;
-
-  min-height: 2.2em;
-  max-height: 2.2em;
-  min-width: 2.2em;
-  max-width: 2.2em;
-
-  text-align: center;
-  line-height: 2.2em;
-
-  cursor: pointer;  
-}
-
-.navicon{
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 2em;
-  box-shadow: 0 0 10px #EC8642;
-  cursor: pointer;
-}
-
-.navicon:hover {
-  border-radius: 2em;
-  box-shadow: 0 0 10px white;
-}
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Nav Bar Layout                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .nav-bar{
@@ -49,16 +18,6 @@
   flex-shrink: 0;
 }
 
-.dark-nav{
-  background-color: #0e151a;
-  color: skyblue;
-}
-
-.light-nav{
-  background-color: skyblue;
-  color: #0e151a;
-}
-
 .nav-bar > * {
   width: 33%;
   display: flex;
@@ -69,5 +28,26 @@
 }
 
 #left-nav{ justify-content: flex-start; }
-#mid-nav{ justify-content: center; }
+#mid-nav{
+  justify-content: space-evenly; 
+  font-size: 1.2em;
+  /* font-weight: bold; */
+}
 #right-nav{ justify-content: flex-end; }
+
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Nav colors                   */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.dark-nav{
+  background-color: #0e151a;
+  color: skyblue;
+}
+
+.light-nav{
+  background-color: skyblue;
+  color: #0e151a;
+}
+
+.dark-selected-site{ border-bottom: 0.07em solid lime; }
+.light-selected-site{ border-bottom: 0.07em solid black; }

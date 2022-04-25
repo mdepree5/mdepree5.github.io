@@ -15,6 +15,10 @@ body {
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Elements                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
+img {
+  height: 4em;
+  width: 4em;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

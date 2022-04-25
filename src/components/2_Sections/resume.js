@@ -1,4 +1,4 @@
-import {skills, experiences, education} from '../../data/resume' 
+import {skills, experiences, educations} from '../../data/resume' 
 import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
@@ -7,40 +7,50 @@ const Resume = () => {
   
   return (<>
     <h1>Resume</h1>
-    
+
     <div className='col-list'>
-      <div>Skills</div>
-        {skills.map(skill => <SkillCard skill={skill}/>)}
+      <strong>Skills</strong>
+      <div className='skills-container'>
+        {skills.map(skill => <SkillCard key={skill.image} skill={skill}/>)}
+      </div>
 
-      <div>Experiences</div>
+      <strong>Experiences</strong>
+        {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
 
-      <div>Education</div>
+      <strong>Education</strong>
+        {educations.map(education => <EducationCard key={education.name} education={education}/>)}
 
     </div>
   </>)
 }
 
 
-
-const SkillCard = () => {
+const SkillCard = ({skill}) => {
   
   return (
     <div className='skill-card'>
-      Skill
+      <img src={skill.image} alt="icon" />
     </div>
   )
 }
 
-const ExperienceCard = () => {
+const ExperienceCard = ({experience}) => {
   
   return (
     <div className='experience-card'>
-      Experience
+      <div style={{fontWeight: 'bold'}} >{experience.role}</div>
+      <div style={{fontStyle: 'italic'}} >{experience.name}</div>
+      <div>{experience.timeframe}</div>
+      <ul>{experience.bullets.map(bullet => (
+        <li key={bullet}>{bullet}</li>
+      ))}</ul>
+      <div>{experience.image}</div>
+
     </div>
   )
 }
 
-const EducationCard = () => {
+const EducationCard = ({education}) => {
   
   return (
     <div className='education-card'>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Route, Routes, NavLink, Navigate } from "react-router-dom";
 import { Divide as Hamburger } from 'hamburger-react'
+import { WiSolarEclipse } from "react-icons/wi";
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 import './Navigation.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
@@ -21,12 +22,14 @@ const Navigation = ({mode, switchMode}) => {
       </div>
     
       <div id='mid-nav'>
-        <button onClick={() => switchMode(mode === 'light' ? 'dark' : 'light')}>
-          Switch to {mode === 'light' ? 'Dark' : 'Light'} Mode
-        </button>
+        <NavLink className={({isActive}) => isActive && `${mode}-selected-site`} id={`${mode}-navlink`} to="/projects" >Projects</NavLink>
+        <NavLink className={({isActive}) => isActive && `${mode}-selected-site`} id={`${mode}-navlink`} to="/resume" >Resume</NavLink>
+        <NavLink className={({isActive}) => isActive && `${mode}-selected-site`} id={`${mode}-navlink`} to="/about" >About</NavLink>
       </div>
     
       <div id='right-nav'>
+        <WiSolarEclipse style={{height: '2em', width:'2em', cursor: 'pointer'}} onClick={() => switchMode(mode === 'light' ? 'dark' : 'light')}/>
+
         {dropdown && <div>
           show dropdown
         </div>}
