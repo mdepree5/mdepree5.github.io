@@ -4,10 +4,12 @@ import './Sections.css'
 
 const Home = () => {
   return (<>
-    <h1>Helping people make the world a better place through quality software.</h1>
-    <p>
+    <h1>
+      Writing better code to build a brighter world
+    </h1>
+    <div>
       My name is Mitch
-    </p>
+    </div>
   </>)
 }
 
