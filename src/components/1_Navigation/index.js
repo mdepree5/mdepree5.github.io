@@ -30,20 +30,21 @@ const Navigation = ({mode, switchMode}) => {
     
       <div id='right-nav'>
         <WiSolarEclipse style={{height: '2em', width:'2em', cursor: 'pointer'}} onClick={() => switchMode(mode === 'light' ? 'dark' : 'light')}/>
-        
-
-
-        {dropdown && 
-          <Modal noBackground={true} providedContent={false} onClose={()=> toggleDropdown(false)}>
-            {<div className='dropdown-content'>
-              <NavLink onClick={()=> toggleDropdown(false)} to="/projects" >Projects</NavLink>
-              <NavLink onClick={()=> toggleDropdown(false)} to="/resume" >Resume</NavLink>
-              <NavLink onClick={()=> toggleDropdown(false)} to="/about" >About</NavLink>
-            </div>}
-          </Modal>
-        }
-
         <Hamburger toggled={dropdown} toggle={toggleDropdown} />
+        {/* {dropdown && <Modal noBackground={true} providedContent={false} onClose={()=> toggleDropdown(false)}>
+          <div className='dropdown-content'>
+            <NavLink onClick={()=> toggleDropdown(false)} to="/projects" >Projects</NavLink>
+            <NavLink onClick={()=> toggleDropdown(false)} to="/resume" >Resume</NavLink>
+            <NavLink onClick={()=> toggleDropdown(false)} to="/about" >About</NavLink>
+          </div>
+        </Modal>} */}
+        {dropdown && <div className='dropdown-background' onClick={()=> toggleDropdown(false)}>
+          <div className='dropdown-content'>
+            <NavLink onClick={()=> toggleDropdown(false)} to="/projects" >Projects</NavLink>
+            <NavLink onClick={()=> toggleDropdown(false)} to="/resume" >Resume</NavLink>
+            <NavLink onClick={()=> toggleDropdown(false)} to="/about" >About</NavLink>
+          </div>
+        </div>}
       </div>
     </nav>
   )

@@ -42,11 +42,13 @@
 .dark-nav{
   background-color: #0e151a;
   color: skyblue;
+  border-bottom: 0.05em solid white;
 }
 
 .light-nav{
   background-color: skyblue;
   color: #0e151a;
+  border-bottom: 0.05em solid gray;
 }
 
 .dark-selected-site{ border-bottom: 0.07em solid lime; }
@@ -55,6 +57,19 @@
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Dropdown                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
+.dropdown-background{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  
+  display: flex;
+  flex-direction: row-reverse;
+
+  background: none;
+}
+
 .dropdown-content{
   display: flex;
   flex-direction: column;
@@ -64,10 +79,12 @@
   
   position: relative;
 
-  /* right: 5em; */
-  top: 4em;
+  top: 3.5em;
+  right: 0.5em;
   z-index: 12;
+  
   width: 10em;
+  height: 10em;
 
   box-shadow: 0 0 8px gray;
   border-radius: 0.8em;
