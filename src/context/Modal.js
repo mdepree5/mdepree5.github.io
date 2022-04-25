@@ -29,7 +29,7 @@ export function Modal({ onClose, children, noBackground=false }) {
   return ReactDOM.createPortal(
     <div className="modal-container">
       <div className="modal-background" id={noBackground ? 'no-background' : ''} onClick={onClose} />
-        {children}
+      {children}
     </div>,
     modalNode
   );
