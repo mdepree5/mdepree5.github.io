@@ -19,6 +19,7 @@
   /* justify-content: space-between;
   justify-content: space-evenly;
   font-weight: bold; */
+  padding: 1em;
 }
 .project-card:hover{
   background: rgb(54, 55, 62);
@@ -33,6 +34,26 @@
 
 .external-link:hover{
   border-bottom: 0.05em solid white;
+}
+
+.project-image{
+  border: 0.05em solid gold;
+  min-width: 16em;
+  min-height: 10em;
+}
+
+.project-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.project-links > *{
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.project-description{
+
 }
 
 

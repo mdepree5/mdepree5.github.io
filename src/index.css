@@ -32,6 +32,10 @@ a{
   text-decoration: none;
 }
 
+ul{
+  text-align: left;
+}
+
 button{
 
   font: inherit;

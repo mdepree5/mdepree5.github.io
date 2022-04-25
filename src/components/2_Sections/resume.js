@@ -50,7 +50,6 @@ const ExperienceCard = ({experience}) => {
         <li key={bullet}>{bullet}</li>
       ))}</ul>
       <img src={experience.image} alt="experience" />
-
     </div>
   )
 }

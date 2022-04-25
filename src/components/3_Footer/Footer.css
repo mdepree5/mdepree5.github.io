@@ -16,8 +16,9 @@
   
   align-items: center;
   
-  
   justify-content: space-evenly;
+  
+  justify-content: flex-start;
   
   height: 80px;
   width: 100%;

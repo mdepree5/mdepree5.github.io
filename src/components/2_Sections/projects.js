@@ -9,20 +9,30 @@ const Projects = () => {
     
 
     <div className='projects-container'>
-      {projects.map(project => (
-        <div className='project-card' key={project.name}>
+      {projects.map(project => <ProjectCard key={project.name} project={project}/>)}
+    </div>
+  </>)
+}
+
+
+const ProjectCard = ({project}) => {
+  return (
+    <div className='project-card row-list'>
+      <img className='project-image' src={project.image} alt="project" />
+
+      <div className='col-list'>
+
+        <div className='project-links'>
           <h2>{project.name}</h2>
-          <p>{project.description}</p>
           <ExternalLink link={project.live} text='See Live'/>
           <ExternalLink link={project.repo} text='See Github'/>
-          <img src={project.image} alt="project" />
         </div>
-      ))}
+
+        <div className='project-description'>{project.description}</div>
+      </div>
+
     </div>
-
-
-
-  </>)
+  )
 }
 
 const ExternalLink = ({link, text}) => <strong className='external-link' onClick={()=>window.open(link)}>{text}</strong>

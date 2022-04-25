@@ -22,9 +22,9 @@ const Navigation = ({mode, switchMode}) => {
       </div>
     
       <div id='mid-nav'>
-        <NavLink className={({isActive}) => isActive && `${mode}-selected-site`} id={`${mode}-navlink`} to="/projects" >Projects</NavLink>
-        <NavLink className={({isActive}) => isActive && `${mode}-selected-site`} id={`${mode}-navlink`} to="/resume" >Resume</NavLink>
-        <NavLink className={({isActive}) => isActive && `${mode}-selected-site`} id={`${mode}-navlink`} to="/about" >About</NavLink>
+        <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/projects" >Projects</NavLink>
+        <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/resume" >Resume</NavLink>
+        <NavLink className={({isActive}) => isActive ? `${mode}-selected-site` : ''} id={`${mode}-navlink`} to="/about" >About</NavLink>
       </div>
     
       <div id='right-nav'>
