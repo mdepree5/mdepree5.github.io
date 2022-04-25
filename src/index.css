@@ -87,7 +87,7 @@ button{
 }
 .light{
   background-color: white;
-  color: red;
+  color: #282c34;
 }
 
 .row-list{ display: flex; flex-direction: row; }
