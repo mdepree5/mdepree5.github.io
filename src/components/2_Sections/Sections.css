@@ -16,6 +16,9 @@
 /* todo             Projects                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .project-card{
+  display: flex;
+  flex-direction: row;
+  
   border: 0.05em solid gray;
   margin: 1em;
   margin-top: 0;
@@ -62,6 +65,9 @@
 /* todo             Experiences                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .experience-card{
+  display: flex;
+  flex-direction: row-reverse;
+
   justify-content: flex-end;
 
   border: 0.05em solid gray;
@@ -72,6 +78,7 @@
   padding: 1em;
   text-align: left; 
 }
+
 
 .experience-card ul{
   text-align: left; 
@@ -154,4 +161,20 @@
 
 .skill-card > img{
   margin-top: 1em;
+}
+
+
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Media                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+@media (max-width: 1000px){
+  .experience-card{
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card{
+    flex-direction: column;
+    align-items: center;
+  }
 }

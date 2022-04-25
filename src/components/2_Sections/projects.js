@@ -16,7 +16,7 @@ const Projects = ({mode}) => {
 
 const ProjectCard = ({mode, project}) => {
   return (
-    <div className={`${mode}-project-card project-card row-list`}>
+    <div className={`${mode}-project-card project-card`}>
       <img style={{cursor:'pointer'}} onClick={()=>window.open(project.live)} className='project-image' src={project.image} alt="project" />
 
       <div className='col-list'>

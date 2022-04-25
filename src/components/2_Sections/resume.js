@@ -32,7 +32,8 @@ const Resume = ({mode}) => {
 const ExperienceCard = ({experience}) => {
   
   return (
-    <div className='experience-card row-list'>
+    <div className='experience-card'>
+      <img className='experience-image' src={experience.image} alt="experience" />
       
       <div className='col-list'>
         <div className='experience-header' >
@@ -44,8 +45,6 @@ const ExperienceCard = ({experience}) => {
           <li key={bullet}>{bullet}</li>
         ))}</ul>
       </div>
-
-      <img className='experience-image' src={experience.image} alt="experience" />
     </div>
 
 
