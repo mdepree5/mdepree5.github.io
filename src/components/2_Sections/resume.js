@@ -9,16 +9,21 @@ const Resume = () => {
     <h1>Resume</h1>
 
     <div className='col-list'>
+
+      <strong>Experiences</strong>
+      <div className='skills-container'>
+        {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
+      </div>
+
+      <strong>Education</strong>
+      <div className='skills-container'>
+        {educations.map(education => <EducationCard key={education.name} education={education}/>)}
+      </div>
+
       <strong>Skills</strong>
       <div className='skills-container'>
         {skills.map(skill => <SkillCard key={skill.image} skill={skill}/>)}
       </div>
-
-      <strong>Experiences</strong>
-        {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
-
-      <strong>Education</strong>
-        {educations.map(education => <EducationCard key={education.name} education={education}/>)}
 
     </div>
   </>)
@@ -44,7 +49,7 @@ const ExperienceCard = ({experience}) => {
       <ul>{experience.bullets.map(bullet => (
         <li key={bullet}>{bullet}</li>
       ))}</ul>
-      <div>{experience.image}</div>
+      <img src={experience.image} alt="experience" />
 
     </div>
   )
@@ -54,10 +59,15 @@ const EducationCard = ({education}) => {
   
   return (
     <div className='education-card'>
-      Education
+      <div style={{fontWeight: 'bold'}} >{education.description}</div>
+      <div style={{fontStyle: 'italic'}} >{education.name}</div>
+      <div>{education.timeframe}</div>
+      <ExternalLink link={education.link} text={education.name}/>
+      <img src={education.image} alt="education" />
     </div>
   )
 }
 
+const ExternalLink = ({link, text}) => <strong className='external-link' onClick={()=>window.open(link)}>{text}</strong>
 
 export default Resume;
