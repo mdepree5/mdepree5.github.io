@@ -24,7 +24,6 @@
   padding: 1em;
 }
 
-
 .dark-project-card:hover{ background: rgb(54, 55, 62); }
 .light-project-card:hover{ background: wheat; }
 
@@ -34,8 +33,6 @@
 
 .dark-project-card .external-link:hover{ color: white; border-bottom: 0.05em solid white; }
 .light-project-card .external-link:hover{ color: gray; border-bottom: 0.05em solid black; }
-
-
 
 .project-image{
   border: 0.05em solid gray;
@@ -65,23 +62,29 @@
 /* todo             Experiences                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .experience-card{
+  justify-content: flex-end;
+
+  border: 0.05em solid gray;
+  margin: 1em;
+  margin-top: 0;
+
+  border-radius: 0.5em;
   padding: 1em;
-  border: solid 0.04em red;
-  width: 100%;
+  text-align: left; 
 }
 
-.experience-card > *{
-  border: solid 0.04em lime;
+.experience-card ul{
+  text-align: left; 
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 0.5em;
+  border-top: 0.05em solid gray 
 }
-
-/* .experience-card:hover{
-  background: rgb(54, 55, 62);
-} */
 
 .experience-image{
   border: 0.05em solid gold;
-  width: 16em;
-  height: 10em;
+  min-width: 16em; min-height: 10em;
+  max-width: 16em; max-height: 10em;
 }
 
 .experience-header{
@@ -89,7 +92,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0.05em solid red;
 }
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Education                  */

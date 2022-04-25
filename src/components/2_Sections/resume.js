@@ -10,7 +10,8 @@ const Resume = ({mode}) => {
 
     <div className='col-list'>
       <h2>Experiences</h2>
-      <div className={`${mode}-resume-container resume-container`}>
+      {/* <div className={`${mode}-resume-container resume-container`}> */}
+      <div className='col-list'>
         {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
       </div>
 
@@ -28,20 +29,10 @@ const Resume = ({mode}) => {
 }
 
 
-const SkillCard = ({mode, skill}) => {
-
-  return (
-    <div className={`${mode}-skill-card skill-card`}>
-      <img src={skill.image} alt="icon" />
-    </div>
-  )
-}
-
 const ExperienceCard = ({experience}) => {
   
   return (
     <div className='experience-card row-list'>
-      <img className='experience-image' src={experience.image} alt="experience" />
       
       <div className='col-list'>
         <div className='experience-header' >
@@ -54,6 +45,7 @@ const ExperienceCard = ({experience}) => {
         ))}</ul>
       </div>
 
+      <img className='experience-image' src={experience.image} alt="experience" />
     </div>
 
 
@@ -73,6 +65,16 @@ const EducationCard = ({education}) => {
     </div>
   )
 }
+
+const SkillCard = ({mode, skill}) => {
+
+  return (
+    <div className={`${mode}-skill-card skill-card`}>
+      <img src={skill.image} alt="icon" />
+    </div>
+  )
+}
+
 
 const ExternalLink = ({link, text}) => <strong className='external-link' onClick={()=>window.open(link)}>{text}</strong>
 
