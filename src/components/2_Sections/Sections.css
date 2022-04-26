@@ -139,23 +139,14 @@
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Home                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-.home-page{
-  display: flex; flex-direction: row;
-  align-items: center;
-}
+.home-page{ display: flex; flex-direction: row; align-items: center; }
 
 .manifesto{
-  font-size: 1.3em;
-  padding: 1em;
-  text-align: center;
-  width: 80%;
+  width: 80%; text-align: center;
+  font-size: 1.3em; padding: 1em;
 }
 
-.home-image{
-  height: 20em;
-  width: 30em;
-  border-radius: 0.5em;
-}
+.home-image{ height: 20em; width: 30em; border-radius: 0.5em; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Media                  */
