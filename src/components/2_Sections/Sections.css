@@ -134,17 +134,53 @@
 
 .light-skill-card{ border: 0.1em solid black; }
 .light-skill-card:hover{ background: #c6ffca; }
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Home                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.home-page{
+  display: flex; flex-direction: row;
+  align-items: center;
+}
+
+.manifesto{
+  font-size: 1.3em;
+  padding: 1em;
+  text-align: center;
+  width: 80%;
+}
+
+.home-image{
+  height: 20em;
+  width: 30em;
+  border-radius: 0.5em;
+}
+
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Media                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
+@media (min-width: 1000px){
+  .manifesto{ text-align: left; }
+}
 @media (max-width: 1000px){
   .experience-card, .project-card, .education-card{
     flex-direction: column;
     align-items: center;
   }
+  .home-page{ flex-direction: column-reverse; }
+}
+
+@media (max-width: 800px){
+  .home-image{ height: 15em; width: 22.5em;}
 }
 
 @media (max-width: 600px){
   .project-links{ flex-direction: column; }
   .project-links > strong{ margin-bottom: 1em; }
 }
+
+@media (max-width: 500px){
+  .home-image{ height: 12em; width: 18em; }
+  .manifesto{ font-size: 1.1em; }
+}
+  

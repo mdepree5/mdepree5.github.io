@@ -37,7 +37,7 @@ export const experiences = [
       'Handled business communication with vendors, suppliers, bank, and law enforcement',
       'Restructured weekly inventory and order processes from 7 hours to less than 3 hours',
     ],
-    image: '',
+    image: 'https://md5-self.s3.amazonaws.com/work/work-mcd.png',
   },
   {
     name: 'Gull Lake Ministries',
@@ -49,7 +49,7 @@ export const experiences = [
       'Co-developed and implemented organization-wide COVID procedures for food service',
       'Facilitated training and course management for high ropes course and indoor rock wall',
     ],
-    image: '',
+    image: 'https://md5-self.s3.amazonaws.com/work/work-glm.png',
   },
 
 ]
@@ -61,7 +61,10 @@ export const educations = [
     yield: 'BA : Classical Studies, Religion',
     description: 'BA: Classical Studies, Religion - Minors: Chemistry, Communication. Was involved in Varsity Track and Field. Emmaus Scholars Program. Co-led an immersion trip to Austin Texas.',
     link: 'https://hope.edu/',
-    image: '',
+    image: 'https://md5-self.s3.amazonaws.com/education/hope-igd-2.jpg',
+    image2: 'https://md5-self.s3.amazonaws.com/education/hope-igd.jpg',
+    image3: 'https://md5-self.s3.amazonaws.com/education/hope-splash.jpg',
+    image4: 'https://md5-self.s3.amazonaws.com/education/hope-fling.jpg',
   },
   {
     name: 'App Academy',
@@ -69,7 +72,7 @@ export const educations = [
     yield: 'Software Engineer',
     description: 'Immersive software development course with emphasis on full stack web development',
     link: 'https://www.appacademy.io/',
-    image: '',
+    image: 'https://md5-self.s3.amazonaws.com/education/aa.png',
   },
 ]
 
