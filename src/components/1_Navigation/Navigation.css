@@ -28,11 +28,7 @@
 }
 
 #left-nav{ justify-content: flex-start; }
-#mid-nav{
-  justify-content: space-evenly; 
-  font-size: 1.2em;
-  /* font-weight: bold; */
-}
+#mid-nav{ justify-content: space-evenly; font-family: 'Palatino'; font-size: 1.4em; }
 #right-nav{ justify-content: flex-end; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
@@ -101,3 +97,10 @@
 .dark-dropdownlink:hover{ background-color: #19252e; }
 .light-dropdownlink:hover{ background-color: #e6d0a8; }
 
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Nav Media                   */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+@media (max-width: 1000px){
+  .nav-bar > * { width: 50%; }
+  #mid-nav{ display: none; }
+}
