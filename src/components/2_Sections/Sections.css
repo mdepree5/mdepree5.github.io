@@ -7,10 +7,10 @@
   min-height: 5em;
 }
 
-.light-site-page{
-  border-left: 0.1em solid black;
-}
-
+.light-site-page{ border-left: 0.1em solid black; }
+.site-page > div{ padding-top: 1em; }
+.light-site-page > div{ border-top: 0.1em solid black; }
+.dark-site-page > div{ border-top: 0.1em solid white; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Projects                  */
