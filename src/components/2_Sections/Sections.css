@@ -143,3 +143,8 @@
     align-items: center;
   }
 }
+
+@media (max-width: 600px){
+  .project-links{ flex-direction: column; }
+  .project-links > strong{ margin-bottom: 1em; }
+}
