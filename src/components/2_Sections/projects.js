@@ -22,8 +22,8 @@ const ProjectCard = ({mode, project}) => {
       <div className='col-list'>
         <div className='project-links'>
           <h2 style={{cursor:'pointer'}} onClick={()=>window.open(project.live)} >{project.name}</h2>
-          <ExternalLink link={project.live} text='See Live'/>
-          <ExternalLink link={project.repo} text='See Github'/>
+          <ExternalLink link={project.live} text='Live'/>
+          <ExternalLink link={project.repo} text='Github'/>
         </div>
 
         <div className='project-description'>{project.description}</div>
