@@ -7,6 +7,7 @@
   min-height: 5em;
 }
 
+.site-page h1{ padding-left: 1em; padding-right: 1em; }
 .light-site-page{ border-left: 0.1em solid black; }
 .site-page > div{ padding-top: 1em; }
 .light-site-page > div{ border-top: 0.1em solid black; }
@@ -175,7 +176,7 @@
 }
 
 @media (max-width: 600px){
-  .project-links{ flex-direction: column; }
+  .project-links, .experience-header, .education-header{ flex-direction: column; }
   .project-links > strong{ margin-bottom: 1em; }
 }
 
