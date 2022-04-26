@@ -16,14 +16,9 @@
 /* todo             Projects                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .project-card{
-  display: flex;
-  flex-direction: row;
-  
-  border: 0.05em solid gray;
-  margin: 1em;
-  margin-top: 0;
-
-  border-radius: 0.5em;
+  display: flex; flex-direction: row;
+  border: 0.05em solid gray; border-radius: 0.5em;
+  margin: 1em; margin-top: 0;
   padding: 1em;
 }
 
@@ -38,54 +33,33 @@
 .light-project-card .external-link:hover{ color: gray; border-bottom: 0.05em solid black; }
 
 .project-image{
-  border: 0.05em solid gray;
-  border-radius: 0.5em;
-  min-width: 16em;
-  min-height: 10em;
+  border: 0.05em solid gray; border-radius: 0.5em;
+  min-width: 16em; min-height: 10em;
 }
 
-.project-links{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.project-links > *{
-  margin-left: 1em;
-  margin-right: 1em;
-}
+.project-links{ display: flex; flex-direction: row; align-items: center; }
+.project-links > *{ margin-left: 1em; margin-right: 1em; }
 
 .project-description{ 
   text-align: left; 
-  margin-left: 1em; 
-  padding-top: 0.5em;
-  border-top: 0.05em solid gray 
+  margin-left: 1em; padding-top: 0.5em; 
+  border-top: 0.05em solid gray; 
 }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Experiences                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .experience-card{
-  display: flex;
-  flex-direction: row-reverse;
-
-  justify-content: flex-end;
-
-  border: 0.05em solid gray;
-  margin: 1em;
-  margin-top: 0;
-
-  border-radius: 0.5em;
-  padding: 1em;
-  text-align: left; 
+  display: flex; flex-direction: row-reverse; justify-content: flex-end;
+  border: 0.05em solid gray; border-radius: 0.5em;
+  margin: 1em; margin-top: 0;
+  padding: 1em; 
 }
-
 
 .experience-card ul{
   text-align: left; 
-  margin-left: 1em;
-  margin-right: 1em;
-  padding-top: 0.5em;
-  border-top: 0.05em solid gray 
+  margin-left: 1em; margin-right: 1em;
+  padding-top: 0.5em; border-top: 0.05em solid gray 
 }
 
 .experience-image{
@@ -95,85 +69,66 @@
 }
 
 .experience-header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: flex; flex-direction: row; justify-content: space-between;
   align-items: center;
 }
+.experience-header > *{ width: 33%; }
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Education                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* .education-card{
-  padding: 1em;
-} */
-
-.education-card > *{
-  width: 50%;
+.education-card{
+  display: flex; flex-direction: row; justify-content: flex-start;
+  border: 0.05em solid gray; border-radius: 0.5em;
+  margin: 1em; margin-top: 0;
+  padding: 1em; 
 }
-/* .education-card:hover{
-  background: rgb(54, 55, 62);
-} */
 
 .education-image{
   border: 0.05em solid gold;
-  min-width: 16em;
-  min-height: 10em;
+  min-width: 16em; min-height: 10em;
+  max-width: 16em; max-height: 10em;
+}
+
+.education-header{
+  display: flex; flex-direction: row; justify-content: space-between;
+  align-items: center;
+}
+
+.education-description{
+  text-align: left; 
+  margin-left: 1em; margin-right: 1em;
+  padding-top: 0.5em; border-top: 0.05em solid gray 
 }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Skills                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-.resume-container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-
+.skill-container{
+  display: flex; flex-direction: row;
+  flex-wrap: wrap; justify-content: center;
   border-radius: 1.5em;
-
   overflow: hidden;
 }
-
-.dark-resume-container{ border: 0.05em solid wheat; }
-.light-resume-container{ border: 0.05em solid black; }
-
-/* .resume-container > * {
-  padding: 1em;
-  border: solid 0.04em red;
-  width: 100%;
-} */
+/* .dark-skill-container{ border: 0.05em solid wheat; }
+.light-skill-container{ border: 0.05em solid black; } */
 
 .skill-card{
-  padding: 0;
-  height: 6em;
-  width: 6em;
-  margin: 0.5em;
-  border-radius: 4em;
-  border-radius: 1em;
+  height: 6em; width: 6em;
+  border-radius: 1em; /* border-radius: 4em; */
+  padding: 0; margin: 0.5em;
 }
+.skill-card > img{ margin-top: 1em; }
 
 .dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid white; }
 .dark-skill-card:hover{ background: rgba(211, 229, 255, 0.533); }
-
 .light-skill-card{ border: 0.1em solid black; }
-/* .light-skill-card:hover{ background: rgb(211, 229, 255); } */
 .light-skill-card:hover{ background: wheat; }
-
-.skill-card > img{
-  margin-top: 1em;
-}
-
-
-
+/* .light-skill-card:hover{ background: rgb(211, 229, 255); } */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Media                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 @media (max-width: 1000px){
-  .experience-card{
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-card{
+  .experience-card, .project-card, .education-card{
     flex-direction: column;
     align-items: center;
   }

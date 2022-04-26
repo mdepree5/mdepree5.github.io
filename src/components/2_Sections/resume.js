@@ -10,20 +10,19 @@ const Resume = ({mode}) => {
 
     <div className='col-list'>
       <h2>Experiences</h2>
-      {/* <div className={`${mode}-resume-container resume-container`}> */}
       <div className='col-list'>
         {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
       </div>
 
-      {/* <h2>Education</h2>
-      <div className={`${mode}-resume-container resume-container`}>
+      <h2>Education</h2>
+      <div className='col-list'>
         {educations.map(education => <EducationCard key={education.name} education={education}/>)}
-      </div> */}
+      </div>
 
-      {/* <h2>Skills</h2>
-      <div className={`${mode}-resume-container resume-container`}>
+      <h2>Skills</h2>
+      <div className={`${mode}-skill-container skill-container`}>
         {skills.map(skill => <SkillCard key={skill.image} mode={mode} skill={skill}/>)}
-      </div> */}
+      </div>
     </div>
   </>)
 }
@@ -33,12 +32,13 @@ const ExperienceCard = ({experience}) => {
   
   return (
     <div className='experience-card'>
-      <img className='experience-image' src={experience.image} alt="experience" />
+      {/* <img className='experience-image' src={experience.image} alt="experience" /> */}
       
       <div className='col-list'>
         <div className='experience-header' >
           <h3 >{experience.role}</h3>
-          <div style={{fontStyle: 'italic'}} >{experience.name}</div><div>{experience.timeframe}</div>
+          <div style={{fontStyle: 'italic'}} >{experience.name}</div>
+          <div>{experience.timeframe}</div>
         </div>
 
         <ul>{experience.bullets.map(bullet => (
@@ -47,8 +47,6 @@ const ExperienceCard = ({experience}) => {
       </div>
     </div>
 
-
-
   )
 }
 
@@ -56,11 +54,17 @@ const EducationCard = ({education}) => {
   
   return (
     <div className='education-card'>
-      <div style={{fontWeight: 'bold'}} >{education.description}</div>
-      <div style={{fontStyle: 'italic'}} >{education.name}</div>
-      <div>{education.timeframe}</div>
-      <ExternalLink link={education.link} text={education.name}/>
-      <img src={education.image} alt="education" />
+      {/* <img style={{cursor:'pointer'}} onClick={()=>window.open(education.link)} className='education-image' src={education.image} alt="education" /> */}
+
+      <div className='col-list'>
+        <div className='education-header'>
+          <h3>{education.yield}</h3>
+          <div style={{fontStyle: 'italic'}} >{education.name}</div>
+          <div>{education.timeframe}</div>
+        </div>
+
+        <div className='education-description' >{education.description}</div>
+      </div>
     </div>
   )
 }
@@ -75,6 +79,6 @@ const SkillCard = ({mode, skill}) => {
 }
 
 
-const ExternalLink = ({link, text}) => <strong className='external-link' onClick={()=>window.open(link)}>{text}</strong>
+
 
 export default Resume;

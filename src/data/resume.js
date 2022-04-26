@@ -57,14 +57,16 @@ export const experiences = [
 export const educations = [
   {
     name: 'Hope College',
-    timeframe: 'August 2015 - May 2019',
-    description: 'BA: Classical Studies, Religion - Minors: Chemistry, Communication',
+    timeframe: 'Aug 2015 - May 2019',
+    yield: 'BA : Classical Studies, Religion',
+    description: 'BA: Classical Studies, Religion - Minors: Chemistry, Communication. Was involved in Varsity Track and Field. Emmaus Scholars Program. Co-led an immersion trip to Austin Texas.',
     link: 'https://hope.edu/',
     image: '',
   },
   {
     name: 'App Academy',
-    timeframe: 'September 2021 - May 2022',
+    timeframe: 'Sep 2021 - May 2022',
+    yield: 'Software Engineer',
     description: 'Immersive software development course with emphasis on full stack web development',
     link: 'https://www.appacademy.io/',
     image: '',
