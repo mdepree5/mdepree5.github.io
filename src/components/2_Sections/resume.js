@@ -11,12 +11,12 @@ const Resume = ({mode}) => {
     <div className='col-list'>
       <h2>Experiences</h2>
       <div className='col-list'>
-        {experiences.map(experience => <ExperienceCard key={experience.name} experience={experience}/>)}
+        {experiences.map(experience => <ExperienceCard key={experience.name} mode={mode} experience={experience}/>)}
       </div>
 
       <h2>Education</h2>
       <div className='col-list'>
-        {educations.map(education => <EducationCard key={education.name} education={education}/>)}
+        {educations.map(education => <EducationCard key={education.name} mode={mode} education={education}/>)}
       </div>
 
       <h2>Skills</h2>
@@ -28,10 +28,10 @@ const Resume = ({mode}) => {
 }
 
 
-const ExperienceCard = ({experience}) => {
+const ExperienceCard = ({mode, experience}) => {
   
   return (
-    <div className='experience-card'>
+    <div className={`${mode}-experience-card experience-card`}>
       {/* <img className='experience-image' src={experience.image} alt="experience" /> */}
       
       <div className='col-list'>
@@ -50,10 +50,10 @@ const ExperienceCard = ({experience}) => {
   )
 }
 
-const EducationCard = ({education}) => {
+const EducationCard = ({mode, education}) => {
   
   return (
-    <div className='education-card'>
+    <div className={`${mode}-education-card education-card`}>
       {/* <img style={{cursor:'pointer'}} onClick={()=>window.open(education.link)} className='education-image' src={education.image} alt="education" /> */}
 
       <div className='col-list'>
