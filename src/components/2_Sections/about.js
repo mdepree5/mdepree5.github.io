@@ -20,7 +20,7 @@ const About = () => {
         <div>Trying to learn recursion.</div> 
       */}
 
-      <img style={{height:'20em', width: '30em'}} src="https://static.seekingalpha.com/uploads/2013/3/21/7360901-13638972437431467-Robert-Wagner.jpg" alt="" />
+      <img className='home-image' src="https://static.seekingalpha.com/uploads/2013/3/21/7360901-13638972437431467-Robert-Wagner.jpg" alt="" />
     </div>
   </>)
 }
