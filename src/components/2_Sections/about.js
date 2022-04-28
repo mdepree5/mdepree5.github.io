@@ -6,7 +6,7 @@ import './Sections.css'
 const About = () => {
   return (<>
     <h1>Mitch DePree is a software developer and lifelong learner
-      who 
+      who is committed to building a better world
       
       {/* who does x in order for y to happen */}
     </h1>
