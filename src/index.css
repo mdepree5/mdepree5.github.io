@@ -24,13 +24,13 @@ code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', mon
 
 button{
   font: inherit; color: inherit; outline: none; background: none;
-  border: 0.08em solid rgb(0, 162, 255); border-radius: 1em; 
+  border: 0.08em solid #42cdff; border-radius: 1em; 
   min-height: 1.8em; max-height: 1.8em;
   text-align: center; padding: 0.2em; cursor: pointer;
 }
 
 ::-webkit-scrollbar{ width: 0.6em; z-index: 1; background: none; }
-::-webkit-scrollbar-thumb{ background: skyblue; z-index: 2; /* border-radius: 5em; */ }
+::-webkit-scrollbar-thumb{ background: #42cdff; z-index: 2; /* border-radius: 5em; */ }
 ::-webkit-scrollbar-thumb:hover{ background: #282c34; }
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Common Classes                   */
