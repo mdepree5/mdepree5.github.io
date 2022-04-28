@@ -6,11 +6,12 @@ import './Sections.css'
 const About = () => {
   return (<>
     <h1>Mitch DePree is a software developer and lifelong learner
-      who needs to write more about his about
+      who 
+      
       {/* who does x in order for y to happen */}
     </h1>
     <div>
-      {/*     
+      {/*
         <h2>Software Developer</h2>
         <h2>Lifelong Learner</h2>
         <h2>Stories</h2>
