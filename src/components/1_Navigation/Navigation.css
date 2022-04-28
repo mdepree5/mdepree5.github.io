@@ -25,16 +25,12 @@
 /* todo             Nav colors                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .dark-nav{
-  background-color: #0e151a;
-  color: skyblue;
-  color: #42cdff;
+  background-color: #0e151a; color: #42cdff;
   border-bottom: 0.1em solid white;
 }
 
 .light-nav{
-  background-color: skyblue;
-  background-color: #42cdff;
-  color: #0e151a;
+  background-color: #42cdff; color: #0e151a;
   border-bottom: 0.1em solid #0e151a;
 }
 
