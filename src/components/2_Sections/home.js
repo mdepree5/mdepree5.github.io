@@ -5,7 +5,6 @@ import './Sections.css'
 const Home = () => {
   return (<>
     <h1>Writing better code to build a brighter world</h1>
-    
     <div className='home-page'>
       <div className='manifesto'>
         Mitch deletes as much code as he writes,
