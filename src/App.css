@@ -3,11 +3,7 @@
   min-height: 100vh;
 }
 
-.App > div {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-}
+.App > div { width: 75%; margin-left: auto; margin-right: auto; }
 
 
 .App-logo {
@@ -16,16 +12,10 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  .App-logo { animation: App-logo-spin infinite 20s linear; }
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

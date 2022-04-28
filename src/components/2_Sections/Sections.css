@@ -26,14 +26,16 @@
 }
 
 .dark-project-card:hover{ background: rgb(54, 55, 62); }
-.light-project-card:hover{ background: wheat; }
+.light-project-card:hover{ background: #ffd483; }
 
 .external-link{ cursor: pointer; }
-.dark-project-card h2:hover { color: white; }
-.light-project-card h2:hover { color: gray; }
 
-.dark-project-card .external-link:hover{ color: white; border-bottom: 0.05em solid white; }
-.light-project-card .external-link:hover{ color: gray; border-bottom: 0.05em solid black; }
+.light-project-card h2 { color: #0099ff; }
+.dark-project-card h2:hover { color: white; }
+.light-project-card h2:hover { color: #0099ff; }
+
+.dark-project-card .external-link:hover{ color: white; }
+.light-project-card .external-link:hover{ color: #0099ff; }
 
 .project-image{
   border: 0.05em solid gray; border-radius: 0.5em;

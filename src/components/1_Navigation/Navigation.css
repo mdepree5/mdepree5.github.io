@@ -27,20 +27,22 @@
 .dark-nav{
   background-color: #0e151a;
   color: skyblue;
-  border-bottom: 0.1em solid skyblue;
+  color: #42cdff;
   border-bottom: 0.1em solid white;
 }
 
 .light-nav{
   background-color: skyblue;
+  background-color: #42cdff;
   color: #0e151a;
   border-bottom: 0.1em solid #0e151a;
 }
 
 .dark-navlink{ color: skyblue; }
+.dark-navlink{ color: #42cdff; }
 .light-navlink{ color: #0e151a; }
 
-.dark-navlink:hover{ border-bottom: 0.07em solid wheat; }
+.dark-navlink:hover{ border-bottom: 0.07em solid #ffbd43; }
 .light-navlink:hover{ border-bottom: 0.07em solid black; }
 
 
@@ -81,11 +83,11 @@
 
 .dropdown-content > *{ padding: 1em; }
 
-.dark-dropdownlink{ background-color: #0e151a; color: wheat; }
-.light-dropdownlink{ background-color: wheat; }
+.dark-dropdownlink{ background-color: #0e151a; color: #ffbd43; }
+.light-dropdownlink{ background-color: #ffbd43; }
 
 .dark-dropdownlink:hover{ background-color: #19252e; }
-.light-dropdownlink:hover{ background-color: #e6d0a8; }
+.light-dropdownlink:hover{ background-color: #ffca66; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Nav Media                   */
