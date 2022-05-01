@@ -10,6 +10,8 @@ const About = () => {
     <div className='about-page'>
       <AboutText />
       <img className='home-image' src="https://static.seekingalpha.com/uploads/2013/3/21/7360901-13638972437431467-Robert-Wagner.jpg" alt="" />
+      
+      <img style={{height:'10em', width:'9em', borderRadius:'0.5em'}} src='https://md5-self.s3.amazonaws.com/self/headshot.jpg' alt='' />
     </div>
   </>)
 }
