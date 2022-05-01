@@ -33,3 +33,15 @@
   margin-left: 1em; padding-top: 0.5em; 
   border-top: 0.05em solid gray; 
 }
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Media                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+@media (max-width: 1000px){
+  .project-card{ flex-direction: column; align-items: center; }
+}
+
+@media (max-width: 600px){
+  .project-links{ flex-direction: column; }
+  .project-links > strong{ margin-bottom: 1em; }
+}

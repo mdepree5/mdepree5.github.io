@@ -85,3 +85,20 @@
 
 .light-skill-card{ border: 0.1em solid black; }
 /* .light-skill-card:hover{ background: #c6ffca; } */
+
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Media                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+@media (max-width: 1000px){
+  .experience-card, .education-card{ flex-direction: column; align-items: center; }
+}
+
+@media (max-width: 600px){
+  .experience-header, .education-header{ flex-direction: column; }
+}
+
+@media (max-width: 500px){
+  .skill-card{ height: 5em; width: 5em; }
+  .skill-card > img{ height: 3em; width: 3em; }
+}

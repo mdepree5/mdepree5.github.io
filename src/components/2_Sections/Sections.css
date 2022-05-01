@@ -34,9 +34,6 @@
   .info-text > div{ text-align: left; }
 }
 @media (max-width: 1000px){
-  .experience-card, .project-card, .education-card{
-    flex-direction: column; align-items: center;
-  }
   .info-page{ flex-direction: column-reverse; }
 }
 
@@ -44,15 +41,7 @@
   .info-image{ height: 15em; width: 22.5em;}
 }
 
-@media (max-width: 600px){
-  .project-links, .experience-header, .education-header{ flex-direction: column; }
-  .project-links > strong{ margin-bottom: 1em; }
-}
-
 @media (max-width: 500px){
   .info-image{ height: 12em; width: 18em; }
   .info-text > div{ font-size: 1.1em; }
-  .skill-card{ height: 5em; width: 5em; }
-  .skill-card > img{ height: 3em; width: 3em; }
 }
-  
