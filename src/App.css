@@ -3,8 +3,6 @@
   min-height: 100vh;
 }
 
-.App > div { width: 75%; margin-left: auto; margin-right: auto; }
-
 
 .App-logo {
   height: 40vmin;

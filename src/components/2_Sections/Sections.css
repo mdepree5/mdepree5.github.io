@@ -5,6 +5,7 @@
   flex-grow: 1;
   border-right: 0.1em solid white;
   min-height: 5em;
+  width: 90%; margin-left: auto; margin-right: auto;
 }
 
 .site-page h1{ padding-left: 1em; padding-right: 1em; }
@@ -176,5 +177,14 @@
 @media (max-width: 500px){
   .home-image{ height: 12em; width: 18em; }
   .manifesto{ font-size: 1.1em; }
+  .skill-card{
+    height: 5em; width: 5em;
+    border-radius: 1em; /* border-radius: 4em; */
+    padding: 0; margin: 0.5em;
+  }
+  .skill-card > img{
+    height: 3em; width: 3em;
+    margin-top: 1em; 
+  }
 }
   
