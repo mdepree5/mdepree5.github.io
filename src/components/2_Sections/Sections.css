@@ -9,37 +9,29 @@
 
 .site-page h1{ padding-left: 1em; padding-right: 1em; }
 .site-page > div{ padding-top: 1em; }
+
+.dark-site-page h1, .dark-site-page h2{ color:white; }
+.light-site-page h1, .light-site-page h2{ color:black; }
 /* .light-site-page{ border-left: 0.1em solid black; } */
 /* .light-site-page > div{ border-top: 0.1em solid black; } */
 /* .dark-site-page{ border-right: 0.1em solid white; } */
 /* .dark-site-page > div{ border-top: 0.1em solid white; } */
-
-.dark-site-page h2{ color:white; }
-
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* todo             Home                  */
+/* todo             Home / About                 */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-.home-page{ display: flex; flex-direction: row; align-items: center; }
-.home-image{ height: 20em; width: 30em; border-radius: 0.5em; }
+.info-page{ display: flex; flex-direction: row; align-items: center; }
+.info-image{ height: 20em; width: 30em; border-radius: 0.5em; }
 
-.manifesto{
+.info-text{
   width: 80%; text-align: center;
   font-size: 1.3em; margin: 1em;
-}
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* todo             About                  */
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-.about-page{ display: flex; flex-direction: row; align-items: center; }
-.about-text > *{
-  width: 80%; text-align: center;
-  font-size: 1.3em; margin: 1em; 
 }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Media                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 @media (min-width: 1000px){
-  .manifesto{ text-align: left; }
+  .info-text{ text-align: left; }
 }
 @media (max-width: 1000px){
   .experience-card, .project-card, .education-card{
@@ -61,7 +53,7 @@
 
 @media (max-width: 500px){
   .home-image{ height: 12em; width: 18em; }
-  .manifesto{ font-size: 1.1em; }
+  .info-text{ font-size: 1.1em; }
   .skill-card{ height: 5em; width: 5em; }
   .skill-card > img{ height: 3em; width: 3em; }
 }
