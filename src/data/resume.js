@@ -41,7 +41,7 @@ export const experiences = [
   },
   {
     name: 'Gull Lake Ministries',
-    role: 'Guest Services, Housekeeper, Food Service Director, Grounds Technician, Ropes Course Facilitator',
+    role: 'Food Service Director, Grounds Maintenance, Ropes Course Facilitator',
     timeframe: 'May 2018 - Sep 2021',
     bullets: [
       'Simplified and digitized inventory procedures using Trello and Microsoft Office automation',
@@ -58,8 +58,8 @@ export const educations = [
   {
     name: 'Hope College',
     timeframe: 'Aug 2015 - May 2019',
-    yield: 'BA : Classical Studies, Religion',
-    description: 'BA: Classical Studies, Religion - Minors: Chemistry, Communication. Was involved in Varsity Track and Field. Emmaus Scholars Program. Co-led an immersion trip to Austin Texas.',
+    yield: 'B.A. Classical Studies, Religion',
+    description: 'Minors: Chemistry, Communication. Varsity Track and Field. Emmaus Scholars Program.',
     link: 'https://hope.edu/',
     image: 'https://md5-self.s3.amazonaws.com/education/hope-igd-2.jpg',
     image2: 'https://md5-self.s3.amazonaws.com/education/hope-igd.jpg',

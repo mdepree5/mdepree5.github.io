@@ -8,8 +8,8 @@
   padding: 1em;
 }
 
-.dark-project-card:hover{ background: rgb(54, 55, 62); }
-.light-project-card:hover{ background: #ffd483; }
+.dark-project-card:hover{ background: #36373e; }
+/* .light-project-card:hover{ background: #ffd483; } */
 
 .external-link{ cursor: pointer; }
 
