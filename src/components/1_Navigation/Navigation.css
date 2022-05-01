@@ -24,24 +24,14 @@
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Nav colors                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-.dark-nav{
-  background-color: #0e151a; color: #42cdff;
-  border-bottom: 0.1em solid white;
-}
+.dark-nav{ background-color: #0e151a; color: #42cdff; border-bottom: 0.1em solid white; }
+.light-nav{ background-color: #42cdff; color: #0e151a; border-bottom: 0.1em solid #0e151a; }
 
-.light-nav{
-  background-color: #42cdff; color: #0e151a;
-  border-bottom: 0.1em solid #0e151a;
-}
-
-.dark-navlink{ color: skyblue; }
-.dark-navlink{ color: #42cdff; }
-.light-navlink{ color: #0e151a; }
+.dark-navlink{ color: #42cdff; border-bottom: 0.07em solid #0e151a; }
+.light-navlink{ color: #0e151a; border-bottom: 0.07em solid #42cdff; }
 
 .dark-navlink:hover{ border-bottom: 0.07em solid #ffbd43; }
 .light-navlink:hover{ border-bottom: 0.07em solid black; }
-
-
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Dropdown                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
