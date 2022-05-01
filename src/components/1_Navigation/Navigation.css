@@ -50,11 +50,11 @@
 }
 
 .dropdown-content > *{ padding: 1em; }
-.dark-dropdownlink{ background-color: #0e151a; color: #ffbd43; }
-.light-dropdownlink{ background-color: #ffbd43; }
+.dark-dropdownlink{ background-color: #0e151a; color: white; }
+.light-dropdownlink{ background-color: #ededed; }
 
 .dark-dropdownlink:hover{ background-color: #19252e; }
-.light-dropdownlink:hover{ background-color: #ffca66; }
+.light-dropdownlink:hover{ background-color: #dedede; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Nav Media                   */

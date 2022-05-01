@@ -10,7 +10,7 @@
 }
 .dark-experience-card .experience-header{ color:#fff5bd; }
 .dark-experience-card li:hover{ color:#fff5bd; }
-.light-experience-card:hover{ background-color:#fff5bd; }
+.light-experience-card{ background: #f9f9f9; }
 
 .experience-card ul{
   text-align: left; 
@@ -40,8 +40,7 @@
 }
 
 .dark-education-card .education-header{ color:#e8c3ff; }
-/* .dark-education-card .education-description:hover{ color:#e8c3ff; } */
-.light-education-card:hover{ background-color:#e8c3ff; }
+.light-education-card{ background: #f9f9f9; }
 
 .education-image{
   border: 0.05em solid gold;
@@ -79,11 +78,8 @@
   padding: 0; margin: 0.5em;
 }
 
-.dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid white; }
-.dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid #c6ffca; }
-/* .dark-skill-card:hover{ background: rgba(211, 229, 255, 0.533); } */
-
-.light-skill-card{ border: 0.1em solid black; }
+.dark-skill-card{ background: #d3e5ff2e; border: 0.1em solid white; }
+.light-skill-card{ background: #f9f9f9; border: 0.1em solid black; }
 /* .light-skill-card:hover{ background: #c6ffca; } */
 
 
@@ -95,7 +91,8 @@
 }
 
 @media (max-width: 600px){
-  .experience-header, .education-header{ flex-direction: column; }
+  .experience-header, .education-header{ flex-direction: column; } 
+  .experience-header > *, .education-header > *{ width: 100%; margin-bottom: 1em}
 }
 
 @media (max-width: 500px){

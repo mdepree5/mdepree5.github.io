@@ -9,7 +9,7 @@
 }
 
 .dark-project-card:hover{ background: #36373e; }
-/* .light-project-card:hover{ background: #ffd483; } */
+.light-project-card{ background: #f9f9f9; }
 
 .external-link{ cursor: pointer; }
 
