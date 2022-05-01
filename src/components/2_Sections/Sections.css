@@ -134,10 +134,10 @@
 
 .dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid white; }
 .dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid #c6ffca; }
-.dark-skill-card:hover{ background: rgba(211, 229, 255, 0.533); }
+/* .dark-skill-card:hover{ background: rgba(211, 229, 255, 0.533); } */
 
 .light-skill-card{ border: 0.1em solid black; }
-.light-skill-card:hover{ background: #c6ffca; }
+/* .light-skill-card:hover{ background: #c6ffca; } */
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Home                  */
