@@ -1,0 +1,87 @@
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Experiences                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.experience-card{
+  display: flex; flex-direction: row-reverse; justify-content: flex-end;
+  border: 0.05em solid gray; border-radius: 0.5em;
+  margin: 1em; margin-top: 0;
+  padding: 1em; 
+}
+.dark-experience-card .experience-header{ color:#fff5bd; }
+.dark-experience-card li:hover{ color:#fff5bd; }
+.light-experience-card:hover{ background-color:#fff5bd; }
+
+.experience-card ul{
+  text-align: left; 
+  margin-left: 1em; margin-right: 1em;
+  padding-top: 0.5em; border-top: 0.05em solid gray 
+}
+
+.experience-image{
+  border: 0.05em solid gold;
+  min-width: 16em; min-height: 10em;
+  max-width: 16em; max-height: 10em;
+}
+
+.experience-header{
+  display: flex; flex-direction: row; justify-content: space-between;
+  align-items: center;
+}
+.experience-header > *{ width: 33%; }
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Education                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.education-card{
+  display: flex; flex-direction: row; justify-content: flex-start;
+  border: 0.05em solid gray; border-radius: 0.5em;
+  margin: 1em; margin-top: 0;
+  padding: 1em; 
+}
+
+.dark-education-card .education-header{ color:#e8c3ff; }
+/* .dark-education-card .education-description:hover{ color:#e8c3ff; } */
+.light-education-card:hover{ background-color:#e8c3ff; }
+
+.education-image{
+  border: 0.05em solid gold;
+  min-width: 16em; min-height: 10em;
+  max-width: 16em; max-height: 10em;
+}
+
+.education-header{
+  display: flex; flex-direction: row; justify-content: space-between;
+  align-items: center;
+}
+
+.education-description{
+  text-align: left; 
+  margin-left: 1em; margin-right: 1em;
+  padding-top: 0.5em; border-top: 0.05em solid gray 
+}
+
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             Skills                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.skill-container{
+  display: flex; flex-direction: row;
+  flex-wrap: wrap; justify-content: center;
+  border-radius: 1.5em;
+  overflow: hidden;
+}
+/* .dark-skill-container{ border: 0.05em solid wheat; }
+.light-skill-container{ border: 0.05em solid black; } */
+
+.skill-card{
+  display: flex; align-items: center; justify-content: center;
+  height: 6em; width: 6em;
+  border-radius: 1em; 
+  padding: 0; margin: 0.5em;
+}
+
+.dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid white; }
+.dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid #c6ffca; }
+/* .dark-skill-card:hover{ background: rgba(211, 229, 255, 0.533); } */
+
+.light-skill-card{ border: 0.1em solid black; }
+/* .light-skill-card:hover{ background: #c6ffca; } */

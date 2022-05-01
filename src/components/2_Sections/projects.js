@@ -1,5 +1,6 @@
 import {projects} from '../../data/projects'
 import './Sections.css'
+import './projects.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 const Projects = ({mode}) => {

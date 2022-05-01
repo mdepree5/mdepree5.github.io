@@ -17,139 +17,20 @@
 .dark-site-page h2{ color:white; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* todo             Projects                  */
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-.project-card{
-  display: flex; flex-direction: row;
-  border: 0.05em solid gray; border-radius: 0.5em;
-  margin: 1em; margin-top: 0;
-  padding: 1em;
-}
-
-.dark-project-card:hover{ background: rgb(54, 55, 62); }
-.light-project-card:hover{ background: #ffd483; }
-
-.external-link{ cursor: pointer; }
-
-.light-project-card h2 { color: #0099ff; }
-.dark-project-card h2:hover { color: white; }
-.light-project-card h2:hover { color: #0099ff; }
-
-.dark-project-card .external-link:hover{ color: white; }
-.light-project-card .external-link:hover{ color: #0099ff; }
-
-.project-image{
-  border: 0.05em solid gray; border-radius: 0.5em;
-  min-width: 16em; min-height: 10em;
-}
-
-.project-links{ display: flex; flex-direction: row; align-items: center; }
-.project-links > *{ margin-left: 1em; margin-right: 1em; }
-
-.project-description{ 
-  text-align: left; 
-  margin-left: 1em; padding-top: 0.5em; 
-  border-top: 0.05em solid gray; 
-}
-
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* todo             Experiences                  */
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-.experience-card{
-  display: flex; flex-direction: row-reverse; justify-content: flex-end;
-  border: 0.05em solid gray; border-radius: 0.5em;
-  margin: 1em; margin-top: 0;
-  padding: 1em; 
-}
-.dark-experience-card .experience-header{ color:#fff5bd; }
-.dark-experience-card li:hover{ color:#fff5bd; }
-.light-experience-card:hover{ background-color:#fff5bd; }
-
-.experience-card ul{
-  text-align: left; 
-  margin-left: 1em; margin-right: 1em;
-  padding-top: 0.5em; border-top: 0.05em solid gray 
-}
-
-.experience-image{
-  border: 0.05em solid gold;
-  min-width: 16em; min-height: 10em;
-  max-width: 16em; max-height: 10em;
-}
-
-.experience-header{
-  display: flex; flex-direction: row; justify-content: space-between;
-  align-items: center;
-}
-.experience-header > *{ width: 33%; }
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* todo             Education                  */
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-.education-card{
-  display: flex; flex-direction: row; justify-content: flex-start;
-  border: 0.05em solid gray; border-radius: 0.5em;
-  margin: 1em; margin-top: 0;
-  padding: 1em; 
-}
-
-.dark-education-card .education-header{ color:#e8c3ff; }
-/* .dark-education-card .education-description:hover{ color:#e8c3ff; } */
-.light-education-card:hover{ background-color:#e8c3ff; }
-
-.education-image{
-  border: 0.05em solid gold;
-  min-width: 16em; min-height: 10em;
-  max-width: 16em; max-height: 10em;
-}
-
-.education-header{
-  display: flex; flex-direction: row; justify-content: space-between;
-  align-items: center;
-}
-
-.education-description{
-  text-align: left; 
-  margin-left: 1em; margin-right: 1em;
-  padding-top: 0.5em; border-top: 0.05em solid gray 
-}
-
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-/* todo             Skills                  */
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
-.skill-container{
-  display: flex; flex-direction: row;
-  flex-wrap: wrap; justify-content: center;
-  border-radius: 1.5em;
-  overflow: hidden;
-}
-/* .dark-skill-container{ border: 0.05em solid wheat; }
-.light-skill-container{ border: 0.05em solid black; } */
-
-.skill-card{
-  display: flex; align-items: center; justify-content: center;
-  height: 6em; width: 6em;
-  border-radius: 1em; 
-  padding: 0; margin: 0.5em;
-}
-
-.dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid white; }
-.dark-skill-card{ background: rgba(211, 229, 255, 0.18); border: 0.1em solid #c6ffca; }
-/* .dark-skill-card:hover{ background: rgba(211, 229, 255, 0.533); } */
-
-.light-skill-card{ border: 0.1em solid black; }
-/* .light-skill-card:hover{ background: #c6ffca; } */
-
-/* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Home                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .home-page{ display: flex; flex-direction: row; align-items: center; }
+.home-image{ height: 20em; width: 30em; border-radius: 0.5em; }
 
 .manifesto{
   width: 80%; text-align: center;
   font-size: 1.3em; padding: 1em;
 }
-
-.home-image{ height: 20em; width: 30em; border-radius: 0.5em; }
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+/* todo             About                  */
+/* todo ——————————————————————————————————————————————————————————————————————————————— */
+.about-page{ display: flex; flex-direction: row; }
+.about-text > *{ margin: 1em; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Media                  */
@@ -163,6 +44,7 @@
     align-items: center;
   }
   .home-page{ flex-direction: column-reverse; }
+  .about-page{ flex-direction: column-reverse; }
 }
 
 @media (max-width: 800px){

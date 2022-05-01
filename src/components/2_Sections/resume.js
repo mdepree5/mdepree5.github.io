@@ -1,5 +1,6 @@
 import {skills, experiences, educations} from '../../data/resume' 
 import './Sections.css'
+import './resume.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 
