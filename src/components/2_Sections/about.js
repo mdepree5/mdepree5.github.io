@@ -16,11 +16,10 @@ const AboutText = () => {
       {/* <h2>Writing better code to build a brighter world</h2> */}
       <h1>Call me Mitch. </h1>
       <div style={{fontSize:'1.5em'}} >
-        I build with React and Redux
+        I build with React and Redux. I pursued software development with App Academy.
       </div>
       <div style={{fontSize:'1.5em'}} >
-        I earned dual Bachelor degrees in Classical Studies and Religion from Hope College before 
-        pursuing software development with App Academy.
+        I earned dual Bachelor degrees in Classical Studies and Religion from Hope College.
       </div>
 
       <div style={{fontSize:'1.5em'}} >
@@ -28,11 +27,10 @@ const AboutText = () => {
       </div>
 
       <div style={{fontSize:'1.5em'}} >
-        When it isn't data structures and algorithms, it's Boolean algebra and/or logic. 
-        <br />
-        When it's learning how the brain works, 
-        How to get further with less,
-        How to speak less.
+        When it isn't data structures and algorithms, 
+        when it's not Boolean algebra and/or logic, it's learning how the brain works,
+        learning how to climb better.
+
       </div>
     </div>
   )
