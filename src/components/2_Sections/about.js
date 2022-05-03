@@ -2,7 +2,8 @@ import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 const About = () => {
-  return (<>
+  return (<div id='about'>
+    <div style={{height:'4em'}}/>
     <h1>Mitch DePree is a software developer and lifelong learner
       who is committed to building a better world
     </h1>
@@ -10,7 +11,7 @@ const About = () => {
       <AboutText />
       <img style={{height:'10em', width:'9em', borderRadius:'0.5em'}} src='https://md5-self.s3.amazonaws.com/self/headshot.jpg' alt='' />
     </div>
-  </>)
+  </div>)
 }
 
 

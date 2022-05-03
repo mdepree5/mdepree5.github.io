@@ -5,13 +5,13 @@ import './projects.css'
 
 const Projects = ({mode}) => {
   
-  return (<>
+  return (<div id='projects'>
+    <div style={{height:'4em'}}/>
     <h1>Projects</h1>
-    
     <div className='col-list'>
       {projects.map(project => <ProjectCard key={project.name} mode={mode} project={project}/>)}
     </div>
-  </>)
+  </div>)
 }
 
 

@@ -3,14 +3,15 @@ import './Sections.css'
 
 
 const Home = () => {
-  return (<>
+  return (<div id='home'>
+    <div style={{height:'4em'}}/>
     <h1>Engineer, Developer</h1>
     <div className='info-page'>
       <HomeText/>
       <img className='info-image' src='https://md5-self.s3.amazonaws.com/self/header.jpeg' alt='' />
     </div>
     <h2>Writing better code to build a brighter world</h2>
-  </>)
+  </div>)
 }
 
 

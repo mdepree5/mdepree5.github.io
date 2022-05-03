@@ -6,9 +6,9 @@ import './resume.css'
 
 const Resume = ({mode}) => {
   
-  return (<>
+  return (<div id='resume'>
+    <div style={{height:'4em'}}/>
     <h1>Resume</h1>
-
     <div className='col-list'>
       <h2>Experiences</h2>
       <div className='col-list'>
@@ -25,7 +25,7 @@ const Resume = ({mode}) => {
         {skills.map(skill => <SkillCard key={skill.image} mode={mode} skill={skill}/>)}
       </div>
     </div>
-  </>)
+  </div>)
 }
 
 
