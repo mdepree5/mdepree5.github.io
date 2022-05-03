@@ -27,7 +27,7 @@ button{
 }
 
 ::-webkit-scrollbar{ width: 0.6em; z-index: 1; background: none; }
-::-webkit-scrollbar-thumb{ background: #1f2028; z-index: 2; /* border-radius: 5em; */ }
+::-webkit-scrollbar-thumb{ background: #1b1b22; z-index: 2; /* border-radius: 5em; */ }
 /* ::-webkit-scrollbar-thumb:hover{ background: #282c34; } */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Common Classes                   */
