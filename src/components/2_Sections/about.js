@@ -2,36 +2,34 @@ import './Sections.css'
 // ???? ——————————————————————————————————————————————————————————————————————————————————
 
 const About = () => {
-  return (<div id='about'>
-    <div style={{height:'4em'}}/>
-    <h1>Mitch DePree is a software developer and lifelong learner
-      who is committed to building a better world
-    </h1>
-    <div className='info-page'>
+  return (
+    <div className='info-page' id='about'>
       <AboutText />
       <img style={{height:'10em', width:'9em', borderRadius:'0.5em'}} src='https://md5-self.s3.amazonaws.com/self/headshot.jpg' alt='' />
     </div>
-  </div>)
+  )
 }
-
 
 const AboutText = () => {
   return (
     <div className='info-text'>
-      <div>
-        Growing up,
-        Mitch did x, y, z
-        Mitch found 1, 2, 3 interesting
+      {/* <h2>Writing better code to build a brighter world</h2> */}
+      <h1>Call me Mitch. </h1>
+      <div style={{fontSize:'1.5em'}} >
+        I earned dual Bachelor degrees in Classical Studies and Religion from Hope College before 
+        pursuing software development with App Academy.
       </div>
 
-      <div>
-        Mitch earned Bachelor of Arts degrees in Classical Studies and Religion from Hope College.
-        After studying at Hope College
+      <div style={{fontSize:'1.5em'}} >
+        I am always learning, tinkering, and improving.
       </div>
 
-      <div>
-        In 2021 September, 
-        Mitch chose to pursue software development
+      <div style={{fontSize:'1.5em'}} >
+        When it isn't data structures and algorithms, it's Boolean algebra and/or logic. 
+        <br />
+        When it's learning how the brain works, 
+        How to get further with less,
+        How to speak less.
       </div>
     </div>
   )

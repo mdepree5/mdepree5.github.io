@@ -6,26 +6,27 @@ import './resume.css'
 
 const Resume = ({mode}) => {
   
-  return (<div id='resume'>
-    <div style={{height:'4em'}}/>
-    <h1>Resume</h1>
-    <div className='col-list'>
-      <h2>Experiences</h2>
+  return (
+    <div id='resume'>
+      <h1>Resume</h1>
       <div className='col-list'>
-        {experiences.map(experience => <ExperienceCard key={experience.name} mode={mode} experience={experience}/>)}
-      </div>
-
-      <h2>Education</h2>
-      <div className='col-list'>
-        {educations.map(education => <EducationCard key={education.name} mode={mode} education={education}/>)}
-      </div>
-
-      <h2>Skills</h2>
-      <div className={`${mode}-skill-container skill-container`}>
-        {skills.map(skill => <SkillCard key={skill.image} mode={mode} skill={skill}/>)}
+        <h2>Experiences</h2>
+        <div className='col-list'>
+          {experiences.map(experience => <ExperienceCard key={experience.name} mode={mode} experience={experience}/>)}
+        </div>
+    
+        <h2>Education</h2>
+        <div className='col-list'>
+          {educations.map(education => <EducationCard key={education.name} mode={mode} education={education}/>)}
+        </div>
+    
+        <h2>Skills</h2>
+        <div className={`${mode}-skill-container skill-container`}>
+          {skills.map(skill => <SkillCard key={skill.image} mode={mode} skill={skill}/>)}
+        </div>
       </div>
     </div>
-  </div>)
+  )
 }
 
 

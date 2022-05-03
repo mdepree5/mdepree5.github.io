@@ -2,42 +2,44 @@
 /* todo             Index                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .site-page{
-  width: 90%; margin-left: auto; margin-right: auto;
+  /* width: 90%; margin-left: auto; margin-right: auto; */
+  width: 75%; margin-left: auto; margin-right: auto;
   flex-grow: 1;
   min-height: 5em;
 }
 
+.site-page > div{ padding-top: 4em; }
 .site-page h1{ padding-left: 1em; padding-right: 1em; }
-.site-page > div{ padding-top: 1em; }
 
 .dark-site-page h1, .dark-site-page h2{ color:white; }
 .light-site-page h1, .light-site-page h2{ color:black; }
-/* .light-site-page{ border-left: 0.1em solid black; } */
-/* .light-site-page > div{ border-top: 0.1em solid black; } */
-/* .dark-site-page{ border-right: 0.1em solid white; } */
-/* .dark-site-page > div{ border-top: 0.1em solid white; } */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Home / About                 */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-.info-page{ display: flex; flex-direction: row; align-items: center; }
+.info-page{ 
+  display: flex; flex-direction: row; align-items: center; 
+  text-align: left; 
+  justify-content: center; 
+}
 .info-image{ height: 20em; width: 30em; border-radius: 0.5em; }
 
-.info-text > div{
-  width: 80%; text-align: center;
-  font-size: 1.3em; margin: 1em;
-}
+.info-page h1{ padding: 0; text-align: left; margin: 20px; }
+/* .info-text > *{ width: 80%; text-align: left; margin: 20px; } */
+.info-text > *{ margin: 20px; }
 
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Media                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-@media (min-width: 1000px){
-  .info-text > div{ text-align: left; }
-}
+/* @media (min-width: 1000px){
+  .info-text > *{ text-align: left; }
+} */
 @media (max-width: 1000px){
   .info-page{ flex-direction: column-reverse; }
+  .info-page{ align-items: flex-start; }
+  .info-page > img{ margin-left: 20px; }
 }
 
-@media (max-width: 800px){
+@media (max-width: 716px){
   .info-image{ height: 15em; width: 22.5em;}
 }
 

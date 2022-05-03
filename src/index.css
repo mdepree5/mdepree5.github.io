@@ -35,5 +35,6 @@ button{
 .row-list{ display: flex; flex-direction: row; }
 .col-list{ display: flex; flex-direction: column; }
 
-.dark{ background-color: #282c34; color: rgb(166, 166, 166); }
+.dark{ background-color: #282c34; color: #a9adc1; }
+.dark{ background-color: #1f2028; color: #a9adc1; }
 .light{ background-color: white; color: #282c34; }
