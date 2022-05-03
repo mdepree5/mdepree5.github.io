@@ -16,6 +16,9 @@ const AboutText = () => {
       {/* <h2>Writing better code to build a brighter world</h2> */}
       <h1>Call me Mitch. </h1>
       <div style={{fontSize:'1.5em'}} >
+        I build with React and Redux
+      </div>
+      <div style={{fontSize:'1.5em'}} >
         I earned dual Bachelor degrees in Classical Studies and Religion from Hope College before 
         pursuing software development with App Academy.
       </div>

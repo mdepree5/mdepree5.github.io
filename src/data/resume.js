@@ -56,6 +56,14 @@ export const experiences = [
 
 export const educations = [
   {
+    name: 'App Academy',
+    timeframe: 'Sep 2021 - May 2022',
+    yield: 'Software Engineer',
+    description: 'Immersive software development course with emphasis on full stack web development',
+    link: 'https://www.appacademy.io/',
+    image: 'https://md5-self.s3.amazonaws.com/education/aa.png',
+  },
+  {
     name: 'Hope College',
     timeframe: 'Aug 2015 - May 2019',
     yield: 'B.A. Classical Studies, Religion',
@@ -65,14 +73,6 @@ export const educations = [
     image2: 'https://md5-self.s3.amazonaws.com/education/hope-igd.jpg',
     image3: 'https://md5-self.s3.amazonaws.com/education/hope-splash.jpg',
     image4: 'https://md5-self.s3.amazonaws.com/education/hope-fling.jpg',
-  },
-  {
-    name: 'App Academy',
-    timeframe: 'Sep 2021 - May 2022',
-    yield: 'Software Engineer',
-    description: 'Immersive software development course with emphasis on full stack web development',
-    link: 'https://www.appacademy.io/',
-    image: 'https://md5-self.s3.amazonaws.com/education/aa.png',
   },
 ]
 

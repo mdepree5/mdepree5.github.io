@@ -43,9 +43,9 @@ const Navigation = ({mode, switchMode, setSite}) => {
       </div>
     
       <div id='mid-nav'>
+        <NavLink type='navlink' section='About' scroll={scrollToAbout} />
         <NavLink type='navlink' section='Projects' scroll={scrollToProjects} />
         <NavLink type='navlink' section='Resume' scroll={scrollToResume} />
-        <NavLink type='navlink' section='About' scroll={scrollToAbout} />
       </div>
     
       <div id='right-nav'>
@@ -54,9 +54,9 @@ const Navigation = ({mode, switchMode, setSite}) => {
 
         {dropdown && <div className='dropdown-background' onClick={()=> toggleDropdown(false)}>
           <div className='dropdown-content'>
+            <NavLink type='dropdownlink' section='About' scroll={scrollToAbout} />
             <NavLink type='dropdownlink' section='Projects' scroll={scrollToProjects} />
             <NavLink type='dropdownlink' section='Resume' scroll={scrollToResume} />
-            <NavLink type='dropdownlink' section='About' scroll={scrollToAbout} />
           </div>
         </div>}
       </div>
