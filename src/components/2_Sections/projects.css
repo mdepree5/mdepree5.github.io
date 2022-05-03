@@ -8,17 +8,16 @@
   padding: 1em;
 }
 
-.dark-project-card:hover{ background: #36373e; }
+/* .dark-project-card:hover{ background: #36373e; } */
+.dark-project-card:hover{ background: #313340; }
 .light-project-card{ background: #f9f9f9; }
 
 .external-link{ cursor: pointer; }
 
+/* .dark-project-card h2 { color: #0099ff; }
 .light-project-card h2 { color: #0099ff; }
-.dark-project-card h2:hover { color: white; }
-.light-project-card h2:hover { color: #0099ff; }
-
-.dark-project-card .external-link:hover{ color: white; }
-.light-project-card .external-link:hover{ color: #0099ff; }
+.dark-project-card .external-link{ color: #0099ff; }
+.light-project-card .external-link{ color: #0099ff; } */
 
 .project-image{
   border: 0.05em solid gray; border-radius: 0.5em;
@@ -26,7 +25,8 @@
 }
 
 .project-links{ display: flex; flex-direction: row; align-items: center; }
-.project-links > *{ margin-left: 1em; margin-right: 1em; }
+.project-links > *{ margin-left: 1em; margin-right: 1em; color: #0099ff; }
+.project-links > h2{ color: #0099ff; }
 
 .project-description{ 
   text-align: left; 

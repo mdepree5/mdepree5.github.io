@@ -24,13 +24,16 @@
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Nav colors                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
-.dark-nav{ background-color: #0e151a; color: #42cdff; border-bottom: 0.1em solid white; }
-.light-nav{ background-color: #42cdff; color: #0e151a; border-bottom: 0.1em solid #0e151a; }
+.dark-nav{ background-color: #1b1b22; color: #42cdff; border-bottom: 0.05em solid white; }
+.light-nav{ background-color: white; color: #1f2028; border-bottom: 0.1em solid #1f2028; }
 
-.dark-navlink{ color: #42cdff; border-bottom: 0.07em solid #0e151a; }
-.light-navlink{ color: #0e151a; border-bottom: 0.07em solid #42cdff; }
+.dark-navlink{ font-size: 0.9em; color: #42cdff; border-bottom: 0.07em solid #1b1b22; }
+.light-navlink{ font-size: 0.9em; color: #1f2028; border-bottom: 0.07em solid white; }
 
-.dark-navlink:hover{ border-bottom: 0.07em solid #ffbd43; }
+/* .light-nav{ background-color: #A9A9A9; color: #1f2028; border-bottom: 0.1em solid #1f2028; } */
+/* .light-navlink{ color: #1f2028; border-bottom: 0.07em solid #A9A9A9; } */
+
+.dark-navlink:hover{ border-bottom: 0.07em solid white; }
 .light-navlink:hover{ border-bottom: 0.07em solid black; }
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Dropdown                   */

@@ -27,14 +27,17 @@ button{
 }
 
 ::-webkit-scrollbar{ width: 0.6em; z-index: 1; background: none; }
-::-webkit-scrollbar-thumb{ background: #42cdff; z-index: 2; /* border-radius: 5em; */ }
-::-webkit-scrollbar-thumb:hover{ background: #282c34; }
+::-webkit-scrollbar-thumb{ background: #1f2028; z-index: 2; /* border-radius: 5em; */ }
+/* ::-webkit-scrollbar-thumb:hover{ background: #282c34; } */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 /* todo             Common Classes                   */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .row-list{ display: flex; flex-direction: row; }
 .col-list{ display: flex; flex-direction: column; }
 
-.dark{ background-color: #282c34; color: #a9adc1; }
-.dark{ background-color: #1f2028; color: #a9adc1; }
-.light{ background-color: white; color: #282c34; }
+/* .dark{ background-color: #282c34; color: #a9adc1; }
+.light{ background-color: white; color: #282c34; } */
+
+/* .dark{ background-color: #1f2028; color: #a9adc1; } */
+.dark{ background-color: #1b1b22; color: #8f93a6; }
+.light{ background-color: white; color: #1b1b22; }
