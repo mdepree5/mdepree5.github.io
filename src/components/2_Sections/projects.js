@@ -28,7 +28,10 @@ const ProjectCard = ({mode, project}) => {
           <ExternalLink link={project.repo} text='Github'/>
         </div>
 
-        <div className='project-description'>{project.description}</div>
+        {/* <div className='project-description'>{project.description}</div> */}
+        <ul className='project-bullets'>{project.bullets.map(bullet => 
+          <li key={bullet}>{bullet}</li>
+        )}</ul>
       </div>
 
     </div>

@@ -8,7 +8,9 @@ export const projects = [
     live: 'https://tvhey.herokuapp.com/',
     repo: 'https://github.com/mdepree5/TVHey',
     bullets: [
-      '',
+      'Engineered app data flow with websockets, significantly increasing site speed',
+      'Designed custom form validators that glow when users fill out information',
+      'Provides users with channels, direct messages, search bar, custom logo upon new user creation',
     ],
     image: 'https://md5-self.s3.amazonaws.com/project-screenshots/4.+TVHey/tvh-home.png',
   },

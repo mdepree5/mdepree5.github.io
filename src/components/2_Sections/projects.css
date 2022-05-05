@@ -28,9 +28,14 @@
 .project-links > *{ margin-left: 1em; margin-right: 1em; color: #0099ff; }
 .project-links > h2{ color: #0099ff; }
 
-.project-description{ 
+/* .project-description{ 
   text-align: left; 
   margin-left: 1em; padding-top: 0.5em; 
+  border-top: 0.05em solid gray; 
+} */
+.project-bullets{ 
+  text-align: left; 
+  padding-top: 0.5em; 
   border-top: 0.05em solid gray; 
 }
 
