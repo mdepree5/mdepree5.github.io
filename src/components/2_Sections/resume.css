@@ -3,10 +3,11 @@
 /* todo             Experiences                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .experience-card{
-  display: flex; flex-direction: row-reverse; justify-content: flex-end;
+  display: flex; flex-direction: column; justify-content: flex-end;
   border: 0.05em solid gray; border-radius: 0.5em;
   margin: 1em; margin-top: 0;
   padding: 1em; 
+  width: 100%;
 }
 .dark-experience-card .experience-header{ color:#fff5bd; }
 .dark-experience-card li:hover{ color:#fff5bd; }
@@ -14,7 +15,7 @@
 
 .experience-card ul{
   text-align: left; 
-  margin-left: 1em; margin-right: 1em;
+  margin-right: 1em;
   padding-top: 0.5em; border-top: 0.05em solid gray 
 }
 
@@ -33,10 +34,11 @@
 /* todo             Education                  */
 /* todo ——————————————————————————————————————————————————————————————————————————————— */
 .education-card{
-  display: flex; flex-direction: row; justify-content: flex-start;
+  display: flex; flex-direction: column; justify-content: flex-start;
   border: 0.05em solid gray; border-radius: 0.5em;
   margin: 1em; margin-top: 0;
   padding: 1em; 
+  width: 100%;
 }
 
 .dark-education-card .education-header{ color:#e8c3ff; }
@@ -56,6 +58,12 @@
 .education-description{
   text-align: left; 
   margin-left: 1em; margin-right: 1em;
+  padding-top: 0.5em; border-top: 0.05em solid gray 
+}
+
+.education-card ul{
+  text-align: left; 
+  margin-right: 1em;
   padding-top: 0.5em; border-top: 0.05em solid gray 
 }
 

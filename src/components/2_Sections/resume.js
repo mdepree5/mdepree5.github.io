@@ -36,19 +36,16 @@ const ExperienceCard = ({mode, experience}) => {
     <div className={`${mode}-experience-card experience-card`}>
       {/* <img className='experience-image' src={experience.image} alt="experience" /> */}
       
-      <div className='col-list'>
-        <div className='experience-header' >
-          <h3 >{experience.role}</h3>
-          <div style={{fontStyle: 'italic'}} >{experience.name}</div>
-          <div>{experience.timeframe}</div>
-        </div>
-
-        <ul>{experience.bullets.map(bullet => (
-          <li key={bullet}>{bullet}</li>
-        ))}</ul>
+      <div className='experience-header' >
+        <h3 >{experience.role}</h3>
+        <div style={{fontStyle: 'italic'}} >{experience.name}</div>
+        <div>{experience.timeframe}</div>
       </div>
-    </div>
 
+      <ul>{experience.bullets.map(bullet => (
+        <li key={bullet}>{bullet}</li>
+      ))}</ul>
+    </div>
   )
 }
 
@@ -58,15 +55,16 @@ const EducationCard = ({mode, education}) => {
     <div className={`${mode}-education-card education-card`}>
       {/* <img style={{cursor:'pointer'}} onClick={()=>window.open(education.link)} className='education-image' src={education.image} alt="education" /> */}
 
-      <div className='col-list'>
-        <div className='education-header'>
-          <h3>{education.yield}</h3>
-          <div style={{fontStyle: 'italic'}} >{education.name}</div>
-          <div>{education.timeframe}</div>
-        </div>
-
-        <div className='education-description' >{education.description}</div>
+      <div className='education-header'>
+        <h3>{education.yield}</h3>
+        <div style={{fontStyle: 'italic'}} >{education.name}</div>
+        <div>{education.timeframe}</div>
       </div>
+
+      {/* <div className='education-description' >{education.description}</div> */}
+      <ul>{education.bullets.map(bullet => (
+        <li key={bullet}>{bullet}</li>
+      ))}</ul>
     </div>
   )
 }

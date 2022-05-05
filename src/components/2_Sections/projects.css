@@ -6,6 +6,7 @@
   border: 0.05em solid gray; border-radius: 0.5em;
   margin: 1em; margin-top: 0;
   padding: 1em;
+  width: 100%;
 }
 
 /* .dark-project-card:hover{ background: #36373e; } */
