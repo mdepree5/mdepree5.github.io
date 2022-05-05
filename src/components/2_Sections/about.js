@@ -13,24 +13,19 @@ const About = () => {
 const AboutText = () => {
   return (
     <div className='info-text'>
-      {/* <h2>Writing better code to build a brighter world</h2> */}
       <h1>Call me Mitch. </h1>
-      <div style={{fontSize:'1.5em'}} >
-        I build with React and Redux. I pursued software development with App Academy.
-      </div>
-      <div style={{fontSize:'1.5em'}} >
-        I earned dual Bachelor degrees in Classical Studies and Religion from Hope College.
-      </div>
 
       <div style={{fontSize:'1.5em'}} >
-        I am always learning, tinkering, and improving.
+        Software engineer, Z shell enthusiast, master translator.
+      </div>
+      
+      <div style={{fontSize:'1.5em'}} >
+        Classics-Religion major, downhill skier, careful listener.
       </div>
 
       <div style={{fontSize:'1.5em'}} >
-        When it isn't data structures and algorithms, 
-        when it's not Boolean algebra and/or logic, it's learning how the brain works,
-        learning how to climb better.
-
+        When I'm not in front of screens, you'll find me
+        trail running or climbing.
       </div>
     </div>
   )
