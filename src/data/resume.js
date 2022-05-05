@@ -32,7 +32,7 @@ export const experiences = [
     role: 'General Manager',
     timeframe: 'Sep 2020 - Feb 2021',
     bullets: [
-      'Strategically led shifts to meet company labor cost goals and facilitate ongoing employee training',
+      'Strategically ran shifts to facilitate ongoing training and meet company labor cost goals',
       'Organized employee schedules to ensure balanced shifts during high turnover rates',
       'Handled business communication with vendors, suppliers, bank, and law enforcement',
       'Restructured weekly inventory and order processes from 7 hours to less than 3 hours',
@@ -45,7 +45,7 @@ export const experiences = [
     timeframe: 'May 2018 - Sep 2021',
     bullets: [
       'Simplified and digitized inventory procedures using Trello and Microsoft Office automation',
-      'Managed 100+ person staff in food service operations, serving 300-500 people on a daily basis',
+      'Managed 100+ person staff in food service operations, serving 300-500 people daily',
       'Co-developed and implemented organization-wide COVID procedures for food service',
       'Facilitated training and course management for high ropes course and indoor rock wall',
     ],
