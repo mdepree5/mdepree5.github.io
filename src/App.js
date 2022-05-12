@@ -9,7 +9,7 @@ import './App.css';
 const App = () => {
   const [site, setSite] = useState('')
   // const [mode, switchMode] = useState('dark')
-  const [mode, switchMode] = useState('light')
+  const [mode, switchMode] = useState('dark')
 
   // todo ——————————————————————————————————————————————————————————————————————————————————
   // todo                               Use local storage?
